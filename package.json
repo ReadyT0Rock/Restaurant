@@ -1,12 +1,13 @@
 {
-  "name": "{{projectName}}",
+  "name": "site-for-portfolio",
   "private": true,
-  "description": "Личный проект «{{projectTitle}}» от HTML Academy",
+  "description": "Интернет-магазин экстремальной техники: Drive Moto",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.4.0",
     "browser-sync": "2.27.7",
     "gulp": "4.0.2",
+    "gulp-cli": "^2.3.0",
     "gulp-less": "5.0.0",
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "9.0.1",
