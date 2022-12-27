@@ -4,11 +4,11 @@
   <meta charset='UTF-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <title>Ресторан Gericht</title>
-  <link rel='preload' href='fonts/OpenSans-400.woff2' type='font/woff2' as='font' crossorigin='anonymous'>
-  <link rel='preload' href='fonts/OpenSans-600.woff2' type='font/woff2' as='font' crossorigin='anonymous'>
   <link rel='preload' href='fonts/CormorantUpright-400.woff2' type='font/woff2' as='font' crossorigin='anonymous'>
   <link rel='preload' href='fonts/CormorantUpright-600.woff2' type='font/woff2' as='font' crossorigin='anonymous'>
   <link rel='preload' href='fonts/CormorantUpright-700.woff2' type='font/woff2' as='font' crossorigin='anonymous'>
+  <link rel='preload' href='fonts/OpenSans-400.woff2' type='font/woff2' as='font' crossorigin='anonymous'>
+  <link rel='preload' href='fonts/OpenSans-600.woff2' type='font/woff2' as='font' crossorigin='anonymous'>
   <link rel='icon' href='favicon.ico'>
   <link rel='icon' href='img/favicons/favicon.png' type='image/png' sizes='32x32'>
   <link rel='apple-touch-icon' href='img/favicons/favicon-apple.png'>
@@ -20,7 +20,7 @@
 
   <header class='header'>
     <div class='header__container'>
-      <a class='header__link'>
+      <a class='header__logo'>
         <img class='header__img' src='img/logo-icon.svg' width='199' height='57' alt='логотип ресторана Gericht'>
       </a>
       <ul class='navigation'>
@@ -60,69 +60,73 @@
           </li>
         </ul>
         <div class='promo__content'>
-
-              <div class='promo__column-left'>
-                <p class='promo__subtitle-text subtitle-text'>Chase the new Flavour</p>
-                <h2 class='promo__title title'>The Key To Fine Dining</h2>
-                <p class='promo__text'>Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi
-                  facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus</p>
-                <a class='promo__link button' href='menu.html'>Explore Menu</a>
-              </div>
-              <div class='promo__column-right'>
-                <ul class='promo-images'>
-                  <li class='promo-images__img'>
-                    <img class='promo__img promo__img--current' src='img/index/promo/agg.jpg' srcset='img/index/promo/agg@2x.jpg 2x' width='619' height='688' alt='изысканное ирландское блюдо с листьями мяты, хрустящим хлемцем, с долькой авокадо, пряностями и вареными яйцами'>
-                  </li>
-                  <li class='promo-images__img'>
-                    <img class='promo__img' src='img/index/promo/fried-agg.jpg' srcset='img/index/promo/fried-agg@2x.jpg 2x' width='619' height='688' alt='жаренное яйцо в пряностями'>
-                  </li>
-                  <li class='promo-images__img'>
-                    <img class='promo__img' src='img/index/promo/fish.jpg' srcset='img/index/promo/fish@2x.jpg 2x' width='619' height='688' alt='рыба со специями, травами и дольками лимона'>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          <div class='promo__slider'>
-            <ol class='slider__list'>
-              <li class='slider__item'>
-                <button class='slider__button' type='button'>01</button>
-              </li>
-              <li class='slider__item slider__item--decorate'></li>
-              <li class='slider__item'>
-                <button class='slider__button' type='button'>02</button>
-              </li>
-              <li class='slider__item'>
-                <button class='slider__button' type='button'>03</button>
-              </li>
-              <li class='slider__item'>
-                <button class='slider__button' type='button'>04</button>
-              </li>
-            </ol>
+          <div class='promo__column-left'>
+            <p class='promo__subtitle-text subtitle-text'>Chase The New Flavour</p>
+            <h2 class='promo__title title'>The Key To Fine Dining</h2>
+            <p class='promo__text text-main-style'>Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus</p>
+            <a class='promo__link button' href='menu.html'>Explore Menu</a>
           </div>
-
-      </div>
-      <div class='promo__scroll'>
-        <a class='scroll__link' href='#'>scroll</a>
+          <div class='promo__column-right'>
+            <ul class='promo-images'>
+              <li class='promo-images__img'>
+                <img class='promo__img promo__img--current' src='img/index/promo/agg.jpg' srcset='img/index/promo/agg@2x.jpg 2x' width='619' height='688' alt='изысканное ирландское блюдо с листьями мяты, хрустящим хлемцем, с долькой авокадо, пряностями и вареными яйцами'>
+              </li>
+              <li class='promo-images__img'>
+                <img class='promo__img' src='img/index/promo/fried-agg.jpg' srcset='img/index/promo/fried-agg@2x.jpg 2x' width='619' height='688' alt='жаренное яйцо в пряностями'>
+              </li>
+              <li class='promo-images__img'>
+                <img class='promo__img' src='img/index/promo/fish.jpg' srcset='img/index/promo/fish@2x.jpg 2x' width='619' height='688' alt='рыба со специями, травами и дольками лимона'>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class='slider'>
+          <ol class='slider__list'>
+            <li class='slider__item'>
+              <button class='slider__button' type='button'>01</button>
+            </li>
+            <li class='slider__item slider__item--decorate'></li>
+            <li class='slider__item'>
+              <button class='slider__button' type='button'>02</button>
+            </li>
+            <li class='slider__item'>
+              <button class='slider__button' type='button'>03</button>
+            </li>
+            <li class='slider__item'>
+              <button class='slider__button' type='button'>04</button>
+            </li>
+          </ol>
+        </div>
+        <div class='promo__scroll'>
+          <a class='promo__scroll-link' id='#'>scroll</a>
+        </div>
       </div>
     </section>
 
     <section class='about'>
       <div class='about__container'>
       <div class='about-us'>
-        <h2 class='about-us__title'>About Us</h2>
-        <p class='about-us__text about-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>
+        <h2 class='about-us__title title'>About Us</h2>
+        <p class='about-us__text text-main-style'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis<br> pharetra adipiscing ultrices vulputate posuere tristique. In sed<br> odio nec aliquet eu proin mauris et.</p>
         <a class='about-us__button button' href='about-us.html'>Know More</a>
       </div>
       <img class='about__img' src='img/index/about/knife.png' srcset='img/index/about/knife@2x.png 2x' width='84' height='703' alt='большой кухонный нож с деревянной ручкой фирмы Savernake'>
       <div class='our-history'>
-        <h2 class='our-history__title'>Our History</h2>
-        <p class='our-history__text about-text'>Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat morbi volutpat habitasse interdum mi aliquam In sed odio nec aliquet.</p>
+        <h2 class='our-history__title title'>Our History</h2>
+        <p class='our-history__text text-main-style'>Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat morbi volutpat habitasse interdum mi aliquam In sed odio nec aliquet.</p>
         <a class='our-history__button button' href='our-history.html'>Know More</a>
       </div>
     </div>
+    <span class='about__decorate'>G</span>
     </section>
 
     <section class='reservations'>
+      <svg class="reservations__decorate-one" width="1920" height="10984">
+        <use href='img/sprite.svg#decorate-bg-one'></use>
+      </svg>
+      <svg class='reservations__decorate-two' width="560" height="10694">
+        <use href='img/sprite.svg#decorate-bg-two'></use>
+      </svg>
       <div class='reservations__container'>
         <div class='reservations__wrapper-decorate'>
           <p class='reservations__subtitle-text subtitle-text'>Reservations</p>
@@ -188,27 +192,27 @@
             <li class='special-offers__item'>
               Chapel Hill Shiraz
               <b class='special-oofers__price'>$56</b>
-              <p class='special-offers__volume'>AU | Bottle</p>
+              <p class='special-offers__volume text-main-style'>AU | Bottle</p>
             </li>
             <li class='special-offers__item'>
               Catena Malbec
               <b class='special-oofers__price'>$59</b>
-              <p class='special-offers__volume'>AR | Bottle</p>
+              <p class='special-offers__volume text-main-style'>AR | Bottle</p>
             </li>
             <li class='special-offers__item'>
               La Vieille Rosé
               <b class='special-oofers__price'>$44</b>
-              <p class='special-offers__volume'>FR | 750 ml</p>
+              <p class='special-offers__volume text-main-style'>FR | 750 ml</p>
             </li>
             <li class='special-offers__item'>
               Rhino Pale Ale
               <b class='special-oofers__price'>$31</b>
-              <p class='special-offers__volume'>CA | 750 ml</p>
+              <p class='special-offers__volume text-main-style'>CA | 750 ml</p>
             </li>
             <li class='special-offers__item'>
               Irish Guinness
               <b class='special-oofers__price'>26</b>
-              <p class='special-offers__volume'>IE | 750 ml</p>
+              <p class='special-offers__volume text-main-style'>IE | 750 ml</p>
             </li>
           </ul>
         </div>
@@ -219,27 +223,27 @@
             <li class='special-offers__item'>
               Aperol Spritz
               <b class='special-oofers__price'>$20</b>
-              <p class='special-offers__volume'>Aperol | Villa Marchesi prosecco | soda | 30ml</p>
+              <p class='special-offers__volume text-main-style'>Aperol | Villa Marchesi prosecco | soda | 30ml</p>
             </li>
             <li class='special-offers__item'>
               Dark 'N' Stormy
               <b class='special-oofers__price'>$16</b>
-              <p class='special-offers__volume'>Dark rum | Ginger beer | Slice of lime. </p>
+              <p class='special-offers__volume text-main-style'>Dark rum | Ginger beer | Slice of lime. </p>
             </li>
             <li class='special-offers__item'>
               Daiquiri
               <b class='special-oofers__price'>$10</b>
-              <p class='special-offers__volume'>Rum | Citrus juice | Sugar</p>
+              <p class='special-offers__volume text-main-style'>Rum | Citrus juice | Sugar</p>
             </li>
             <li class='special-offers__item'>
               Old Fashioned
               <b class='special-oofers__price'>$31</b>
-              <p class='special-offers__volume'>Bourbon | Brown sugar | Angostura Bitters</p>
+              <p class='special-offers__volume text-main-style'>Bourbon | Brown sugar | Angostura Bitters</p>
             </li>
             <li class='special-offers__item'>
               Negroni
               <b class='special-oofers__price'>26</b>
-              <p class='special-offers__volume'>Gin | Sweet Vermouth | Campari | Orange garnish</p>
+              <p class='special-offers__volume text-main-style'>Gin | Sweet Vermouth | Campari | Orange garnish</p>
             </li>
           </ul>
         </div>
@@ -253,7 +257,7 @@
         <div class='blockquote__wrapper'>
           <h2 class='blockquote__subtitle-text subtitle-text'>Chef's Word</h2>
           <p class='blockquote__title title'>What we believe in</p>
-          <blockquote class='blockquote__text'>
+          <blockquote class='blockquote__text text-main-style'>
             <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit auctor sit .
               auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue ac
               consequat, aliquam molestie lectus eu. Congue iaculis integer curabitur semper sit nunc.
@@ -275,7 +279,7 @@
           <blockquote class='reviews__item'>
             <img src='' alt='' class='reviews__author-img'>
             <div class='reviews__author-info'>
-              <p class='reviews__text'>Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
+              <p class='reviews__text text-main-style'>Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
               <cite class='reviews__author-name'>Wade Warren</cite>
               <p class='reviews__author-post'></p>
             </div>
@@ -283,7 +287,7 @@
           <blockquote class='reviews__item'>
             <img src='' alt='' class='reviews__author-img'>
             <div class='reviews__author-info'>
-              <p class='reviews__text'>Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
+              <p class='reviews__text text-main-style'>Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
               <cite class='reviews__author-name'>Jane Cooper</cite>
               <p class='reviews__author-post'>Chef</p>
             </div>
@@ -291,7 +295,7 @@
           <blockquote class='reviews__item'>
             <img src='' alt='' class='reviews__author-img'>
             <div class='reviews__author-info'>
-              <p class='reviews__text'>Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
+              <p class='reviews__text text-main-style'>Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
               <cite class='reviews__author-name'>Robert Fox</cite>
               <p class='reviews__author-post'>Chef</p>
             </div>
@@ -299,7 +303,7 @@
           <blockquote class='reviews__item'>
             <img src='' alt='' class='reviews__author-img'>
             <div class='reviews__author-info'>
-              <p class='reviews__text'>Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
+              <p class='reviews__text text-main-style'>Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
               <cite class='reviews__author-name'>Brooklyn Simmons</cite>
               <p class='reviews__author-post'>Caterer</p>
             </div>
@@ -328,28 +332,28 @@
             <img class='awards__icon' width='79' height='79' src='' alt='второе место'>
             <dl>
               <dt>Bib Gourmond</dt>
-              <dd>Lorem ipsum dolor sit amet, consectetur.</dd>
+              <dd class='text-main-style'>Lorem ipsum dolor sit amet, consectetur.</dd>
             </dl>
           </li>
           <li class='awards__item'>
             <img class='awards__icon' width='79' height='79' src='' alt='первое место'>
             <dl>
               <dt>Rising Star</dt>
-              <dd>Lorem ipsum dolor sit amet, consectetur.</dd>
+              <dd class='text-main-style'>Lorem ipsum dolor sit amet, consectetur.</dd>
             </dl>
           </li>
           <li class='awards__item'>
             <img class='awards__icon' width='79' height='79' src='' alt='пятое место'>
             <dl>
               <dt>AA Hospitality </dt>
-              <dd>Lorem ipsum dolor sit amet, consectetur.</dd>
+              <dd class='text-main-style'>Lorem ipsum dolor sit amet, consectetur.</dd>
             </dl>
           </li>
           <li class='awards__item'>
             <img class='awards__icon' width='79' height='79' src='' alt='третье место'>
             <dl>
               <dt>Outstanding Chef</dt>
-              <dd>Lorem ipsum dolor sit amet, consectetur.</dd>
+              <dd class='text-main-style'>Lorem ipsum dolor sit amet, consectetur.</dd>
             </dl>
           </li>
         </ul>
@@ -371,7 +375,7 @@
               <cite class='blogs__author-name'>- Annalisa L</cite>
             </div>
             <h3 class='blogs__subtitle'>tips for prepping and caring for your grill</h3>
-            <p class='blogs__text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
+            <p class='blogs__text text-main-style'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
             <a class='blogs__link' href='#'>Read More</a>
           </li>
           <li class='blogs__item'>
@@ -381,7 +385,7 @@
               <cite class='blogs__author-name'>-John Micheal</cite>
             </div>
             <h3 class='blogs__subtitle'>summer cocktails and mocktails</h3>
-            <p class='blogs__text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
+            <p class='blogs__text text-main-style'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
             <a class='blogs__link' href='#'>Read More</a>
           </li>
           <li class='blogs__item'>
@@ -391,7 +395,7 @@
               <cite class='blogs__author-name'>-Fred W</cite>
             </div>
             <h3 class='blogs__subtitle'>easy cooking for college students</h3>
-            <p class='blogs__text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
+            <p class='blogs__text text-main-style'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
             <a class='blogs__link' href='#'>Read More</a>
           </li>
         </ul>
@@ -404,7 +408,7 @@
       <div class='gallery__wrapper'>
         <p class='gallery__subtitle-text subtitle-text'>Instagram</p>
         <h2 class='gallery__title title'>Photo Gallery</h2>
-        <p class='gallery__text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit
+        <p class='gallery__text text-main-style'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit
           elit scelerisque egestas mu.</p>
         <a class='gallery__button button' href='photo-gallery.html'>View More</a>
       </div>
@@ -479,12 +483,12 @@
         <p class='contacts-time__text'>Monday-Friday: 08:00 am - 12:00 am</p>
         <p class='contacts-time__text'>Saturday-Sunday: 07:00am - 11:00 pm</p>
       </div>
-      <p class='copyright'>2021 Gerícht. All Rights reserved.</p>
+      <p class='copyright text-main-style'>2021 Gerícht. All Rights reserved.</p>
     </div>
 
   </footer>
 
-  <script src='js/script.js'></script>
+
 
 </body>
 
