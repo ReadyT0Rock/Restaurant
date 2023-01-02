@@ -1,0 +1,144 @@
+.footer {
+  position: relative;
+
+  min-height: 616px;
+  padding: 121px 0;
+
+  background: url('../../img/background.jpg') no-repeat;
+  background-size: 1900px 616px;
+  &__container {
+    margin: 0 302px;
+  }
+  &__inner {
+    display: flex;
+    margin-bottom: 72px;
+  }
+  &__column {
+    display: flex;
+    flex-direction: column;
+    width: 438px;
+
+    text-align: center;
+  }
+  &__logo {
+    margin-bottom: 27px;
+  }
+  &__quotes {
+    position: relative;
+    margin-bottom: 41px;
+
+    font-family: @font-OS;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    &::after {
+      position: absolute;
+      content: '';
+      top: 73px;
+      left: 199px;
+
+      width: 40px;
+      height: 9px;
+
+      background: url('../../img/spoon.svg') no-repeat;
+    }
+  }
+
+  &__scroll {
+    position: absolute;
+    top: -71px;
+    right: 79px;
+
+    width: 65px;
+    &-link {
+      position: relative;
+
+      display: block;
+      min-height: 130px;
+      padding-top: 90px;
+
+      font-size: 16px;
+      line-height: 28px;
+      font-weight: 700;
+      color: @second-color-text;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+
+      cursor: pointer;
+      &::before {
+        position: absolute;
+        content: '';
+        top: 22px;
+        left: 16px;
+
+        width: 1px;
+        height: 61px;
+
+        background-color: #dcca87;
+        background: linear-gradient(#dcca87, 95%,#000000);
+      }
+    }
+  }
+}
+
+.contacts {
+  width: 306px;
+  padding-top: 30px;
+  margin-right: 125px;
+
+  text-align: center;
+  &__text {
+    margin-bottom: 8px;
+  }
+}
+
+.contacts-time {
+  width: 306px;
+  padding-top: 30px;
+  margin-left: auto;
+
+  text-align: center;
+  &__text {
+    width: 163px;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+  }
+}
+
+.social {
+  margin: 0 auto;
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 24px);
+    grid-gap: 16px;
+  }
+}
+
+.contacts__title,
+.contacts-time__title {
+  margin-bottom: 24px;
+
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: #f5efdb;
+}
+
+.contacts__text,
+.contacts__phone,
+.contacts-time__text {
+  font-family: @font-OS;
+  font-size: 16px;
+  line-height: 28px;
+  font-style: normal;
+  color: @third-color-text;
+  letter-spacing: 0.04em;
+}
+
+.copyright {
+  text-align: center;
+}

@@ -1,0 +1,80 @@
+.blogs {
+  min-height: 1084px;
+  margin-bottom: 152px;
+  &__container {
+    margin: 0 302px;
+  }
+  &__innder {
+    text-align: center;
+  }
+  &__subtitle-text {
+    position: relative;
+
+    margin-bottom: 25px;
+    &::after {
+      position: absolute;
+      content: '';
+      top: 39px;
+      left: 629px;
+
+      width: 40px;
+      height: 9px;
+
+      background: url('../../img/spoon.svg') no-repeat;
+    }
+  }
+  &__title {
+   margin-bottom: 64px;
+
+   letter-spacing: 0.03em;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 412px);
+    grid-gap: 64px 32px;
+    width: 1300px;
+    margin-bottom: 64px;
+  }
+  &__img {
+    margin-bottom: 15px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+
+    font-family: @font-OS;
+    letter-spacing: 0.04em;
+  }
+  &__author-name {
+    font-style: normal;
+  }
+  &__subtitle {
+    margin-bottom: 32px;
+
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    color: @second-color-text;
+    text-transform: capitalize;
+    & > span {
+      background-image: linear-gradient(to right, #dcca87 0%, #dcca87 100%);
+      background-repeat: repeat-x;
+      background-position: 0 89%;
+      background-size: 100% 3px;
+    }
+  }
+  &__text {
+    margin-bottom: 32px;
+  }
+  &__link {
+    font-weight: 700;
+    color: @second-color-text;
+    letter-spacing: 0.04em;
+  }
+  &__button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

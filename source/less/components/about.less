@@ -1,0 +1,97 @@
+.about {
+  position: relative;
+
+  width: 1900px;
+  min-height: 959px;
+
+  background: url('../img/background.jpg') no-repeat;
+  background-size: 1920px 959px;
+  &__container {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 248px;
+  }
+  &__img {
+    position: absolute;
+    top: 121px;
+    left: 910px;
+
+  }
+  &__decorate {
+    position: absolute;
+    top: 451px;
+    left: 743px;
+    z-index: 0;
+
+    font-size: 631px;
+    font-weight: 600;
+    color: #272727;
+  }
+}
+
+.about-us {
+  width: 588px;
+  padding-top: 340px;
+
+  text-align: right;
+  &__title {
+    position: relative;
+    margin-bottom: 49px;
+
+    letter-spacing: 0.03em;
+    &::after {
+      position: absolute;
+      content: '';
+      top: 90px;
+      left: 549px;
+
+      width: 40px;
+      height: 9px;
+
+      background: url('../../img/spoon.svg') no-repeat;
+
+      transform: rotate(180deg);
+    }
+  }
+  &__text {
+    margin-bottom: 32px;
+  }
+  &__button {
+    width: 141px;
+    margin-left: auto;
+  }
+}
+
+.our-history {
+  width: 575px;
+  padding-top: 340px;
+  padding-left: 13px;
+  &__title {
+    position: relative;
+    margin-bottom: 49px;
+
+    letter-spacing: 0.03em;
+    &::after {
+      position: absolute;
+      content: '';
+      top: 90px;
+      left: 0;
+
+      width: 40px;
+      height: 9px;
+
+      background: url('../../img/spoon.svg') no-repeat;
+    }
+  }
+  &__text {
+    width: 530px;
+    margin-bottom: 32px;
+  }
+  &__button {
+    width: 141px;
+  }
+}

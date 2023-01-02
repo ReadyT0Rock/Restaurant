@@ -1,0 +1,75 @@
+.header {
+  width: 100%;
+  min-height: 121px;
+  padding-top: 32px;
+  margin-bottom: 72px;
+
+  font-family: @font-OS;
+  &__container {
+    display: flex;
+    margin: 0 104px 0 103px;
+  }
+  &__logo {
+    margin-left: 8px;
+    margin-right: 292px;
+  }
+  &--bar {
+    margin-bottom: 0;
+  }
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 14px;
+  width: 700px;
+  &__link {
+    display: block;
+    width: 100%;
+    min-height: 50px;
+    padding: 0 16px 0;
+
+    letter-spacing: 0.04em;
+    &:hover {
+      color: @second-color-text;
+    }
+  }
+}
+
+.user-list {
+  padding-top: 14px;
+  margin-left: auto;
+
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  &__login {
+    position: relative;
+
+    display: inline-block;
+    min-height: 50px;
+    margin-right: 94px;
+    &:hover {
+      color: @second-color-text;
+    }
+  }
+  &__link {
+    display: inline-block;
+    min-height: 50px;
+    margin-right: 8px;
+    &:hover {
+      color: @second-color-text;
+    }
+  }
+  &__login::after {
+    position: absolute;
+    content: '';
+    top: -17px;
+    left: 221px;
+    width: 1px;
+    height: 57px;
+    background-color: #ffffff;
+    background: linear-gradient(#000000, #ffffff, #000000);
+    cursor: auto;
+  }
+}

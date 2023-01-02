@@ -1,0 +1,110 @@
+.reservations {
+  min-height: 775px;
+  padding-top: 157px;
+  padding-bottom: 152px;
+  &__decorate-one {
+    position: absolute;
+    top: 1110.5px;
+    left: -144.5px;
+    z-index: -1;
+  }
+  &__decorate-two {
+    position: absolute;
+    top: 1201px;
+    left: 558.91px;
+    z-index: -1;
+  }
+  &__container {
+    position: relative;
+
+    margin: 0 278px;
+    &::before {
+      position: absolute;
+      content: '';
+      top: -175px;
+      right: -135px;
+
+      width: 146px;
+      height: 146px;
+
+      background: url('../../img/decorate-icon.png') no-repeat;
+    }
+  }
+  &__wrapper-decorate {
+    display: flex;
+    flex-direction: column;
+    min-height: 466px;
+    padding: 48px 31px;
+
+    text-align: center;
+
+    background-color: #0c0c0c;
+    border: 1px solid rgba(220, 202, 135, 0.2);
+  }
+  &__subtitle-text {
+    position: relative;
+    margin-bottom: 25px;
+    &::after {
+      position: absolute;
+      content: '';
+
+      top: 38px;
+      left: 621px;
+
+      width: 40px;
+      height: 9px;
+
+      background: url('../../img/spoon.svg') no-repeat;
+    }
+  }
+  &__title {
+    margin-bottom: 64px;
+
+    letter-spacing: 0.03em;
+  }
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 100px;
+  }
+  &__select {
+    flex-grow: 1;
+    min-width: 400px;
+    min-height: 60px;
+    padding: 16px;
+
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    color: @third-color-text;
+    letter-spacing: 0.04em;
+    font-variant-numeric: lining-nums;
+
+    background: #0c0c0c url('../../img/index/reservation/select-arrow.svg') no-repeat right 21px center;
+    border: 1px solid #f5efdb;
+    appearance: none;
+  }
+
+  .reservations-date {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+  &__button {
+    width: 133px;
+    padding-top: 5px;
+    margin: 0 auto;
+    margin-top: 64px;
+
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+
+    border: 0;
+  }
+
+  &--bar {
+    padding-top: 148px;
+  }
+}

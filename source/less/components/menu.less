@@ -1,0 +1,58 @@
+.menu {
+  position: relative;
+
+  min-height: 932px;
+  margin-bottom: 150px;
+  &::before {
+    position: absolute;
+    content: '';
+    top: 8px;
+    left: 137px;
+
+    width: 146px;
+    height: 146px;
+
+    background: url('../../img/decorate-icon.png') no-repeat;
+  }
+  &__container {
+    margin: 0 auto;
+    padding: 292px 137px 0;
+  }
+  &__item {
+    margin-bottom: 64px;
+  }
+  &__link {
+    font-size: 64px;
+    line-height: 83px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    &--current {
+      border-bottom: 4px solid #ffffff;
+    }
+    &:hover {
+      color: @third-color-text;
+    }
+    &--food:hover + .menu__img--food,
+    &--food:focus + .menu__img--food {
+      transition: 1.5s;
+      opacity: 1;
+    }
+    &--desserts:hover + .menu__img--desserts,
+    &--desserts:focus + .menu__img--desserts {
+      transition: 1.5s;
+      opacity: 1;
+    }
+  }
+  &__img {
+    position: absolute;
+    top: 32px;
+    left: 7px;
+    z-index: -1;
+
+    opacity: 0;
+    width: 1890px;
+    &--bar {
+      opacity: 1;
+    }
+  }
+}
