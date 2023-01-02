@@ -1,0 +1,89 @@
+.reviews {
+  position: relative;
+
+  margin-bottom: 156px;
+  &::before {
+    position: absolute;
+    content: '';
+    top: -200px;
+    right: 279px;
+
+    width: 146px;
+    height: 146px;
+
+    background: url('../../img/decorate-icon.png') no-repeat;
+  }
+  &__container {
+    margin: 0 302px;
+  }
+  &__wrapper {
+    text-align: center;
+  }
+  &__subtitle-text {
+    position: relative;
+
+    margin-bottom: 25px;
+    &::after {
+      position: absolute;
+      content: '';
+
+      top: 38px;
+      left: 629px;
+
+      width: 40px;
+      height: 9px;
+
+      background: url('../../img/spoon.svg') no-repeat;
+    }
+  }
+  &__title {
+    margin-bottom: 64px;
+
+    letter-spacing: 0.03em;
+  }
+  &__blockquote__wrapper {
+    display: grid;
+    grid-template-columns: 634px 634px;
+    grid-gap: 64px 32px;
+  }
+  &__item {
+    position: relative;
+
+    display: flex;
+    margin: 0;
+  }
+  &__author-info {
+    padding: 18px 0;
+  }
+  &__author-img {
+    margin-right: 32px;
+  }
+  &__quotes-decorate {
+    position: absolute;
+    top: 148px;
+    left: 154px;
+
+    font-size: 150px;
+    font-weight: 700;
+
+    transform: rotate(180deg);
+  }
+  &__text {
+    margin-bottom: 16px;
+
+    font-style: italic;
+  }
+  &__author-name {
+    display: block;
+    margin-bottom: 4px;
+
+    font-size: 32px;
+    line-height: 42px;
+    font-style: normal;
+    letter-spacing: 0.04em;
+    color: @second-color-text;
+  }
+  &__author-post {
+    font-family: @font-OS;
+  }
+}

@@ -1,31 +1,26 @@
 .promo {
   min-height: 828px;
   margin-bottom: 122px;
-
   &__container {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 120px;
+    margin: 0 103px;
     padding: 0 198px;
   }
-
   &__content {
     display: flex;
     justify-content: space-between;
     margin-bottom: 87px;
   }
-
   &__column-left {
     width: 538px;
     margin-right: 119px;
     padding-top: 104px;
   }
-
   &__subtitle-text {
     margin-bottom: 25px;
   }
-
   &__title {
     margin-bottom: 32px;
 
@@ -33,13 +28,11 @@
     font-weight: 700;
     line-height: 117px;
   }
-
   &__column-right {
     position: relative;
 
     display: flex;
     width: 650px;
-
     &::before {
       position: absolute;
       content: '';
@@ -52,7 +45,6 @@
 
       background-color: #dcca87;
     }
-
     &::after {
       position: absolute;
       content: '';
@@ -66,38 +58,31 @@
       background-color: #dcca87;
     }
   }
-
   &__text {
     width: 453px;
     margin-bottom: 32px;
   }
-
   &__link {
     width: 157px;
   }
-
   &__img {
     display: none;
-
     &--current {
       display: block;
     }
   }
-
   &__scroll {
     position: absolute;
-    bottom: -41px;
-    right: -29px;
+    bottom: -12px;
+    right: 5px;
 
     width: 65px;
-
-
     &-link {
       position: relative;
 
       display: block;
-      min-height: 134px;
-      padding-top: 100%;
+      min-height: 130px;
+      padding-top: 90px;
 
       font-size: 16px;
       line-height: 28px;
@@ -106,10 +91,11 @@
       text-transform: uppercase;
       letter-spacing: 0.04em;
 
+      cursor: pointer;
       &::before {
         position: absolute;
         content: '';
-        top: -23px;
+        top: 5px;
         left: 30px;
 
         width: 1px;
@@ -132,7 +118,6 @@
   transform: rotate(-90deg);
 
   letter-spacing: 0.04em;
-
   &__item {
     margin-right: 40px;
   }
@@ -142,11 +127,9 @@
   width: 116px;
   min-height: 28px;
   margin: 0 auto;
-
   &__list {
     display: flex;
   }
-
   &__item {
     &--decorate {
       width: 16px;
@@ -160,21 +143,27 @@
       margin: 0 8px 0;
     }
   }
-
   &__button {
     width: 17px;
     height: 28px;
     padding: 0;
 
-    font-family: @font-OS;
     font-size: 16px;
     line-height: 28px;
     font-weight: 600;
     color: @main-color-text;
     letter-spacing: 0.04em;
+    font-variant-numeric: lining-nums;
 
     background-color: transparent;
     border: none;
   }
-}
 
+  &--bar {
+    position: absolute;
+    top: 736px;
+    right: -57px;
+
+    transform: rotate(90deg);
+  }
+}

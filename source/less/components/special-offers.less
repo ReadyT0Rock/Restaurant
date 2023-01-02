@@ -1,0 +1,96 @@
+.special-offers {
+  min-height: 970px;
+  padding-bottom: 152px;
+  &__container {
+    margin: 0 302px;
+  }
+  &__wrapper {
+    margin-bottom: 95px;
+
+    text-align: center;
+  }
+  &__subtitle-text {
+    position: relative;
+
+    margin-bottom: 25px;
+    &::after {
+      position: absolute;
+      content: '';
+
+      top: 38px;
+      left: 628px;
+
+      width: 40px;
+      height: 9px;
+
+      background: url('../../img/spoon.svg') no-repeat;
+    }
+  }
+  &__inner {
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 56px;
+  }
+  &__left-column {
+    width: 412px;
+    min-height: 596px;
+  }
+  &__img {
+    position: absolute;
+    top: -32px;
+    left: 442px;
+  }
+  &__right-column {
+    width: 412px;
+    min-height: 596px;
+  }
+  &__subtitle {
+    margin-bottom: 48px;
+
+    font-size: 45px;
+    line-height: 58px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-align: center;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+
+    font-size: 23px;
+    line-height: 30px;
+    color: @second-color-text;
+    letter-spacing: 0.04em;
+  }
+  &__price {
+    position: relative;
+
+    color: @main-color-text;
+    font-variant-numeric: lining-nums;
+    &::before {
+      position: absolute;
+      content: '';
+      top: 15px;
+      right: 70px;
+
+      width: 119px;
+      height: 1px;
+
+      background-color: #ffffff;
+    }
+  }
+  &__volume {
+    width: 100%;
+    margin-top: 8px;
+
+    font-size: 16px;
+    line-height: 28px;
+  }
+  &__button {
+    margin: 0 auto;
+  }
+}

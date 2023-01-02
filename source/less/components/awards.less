@@ -1,0 +1,77 @@
+.awards {
+  position: relative;
+
+  min-height: 947px;
+  margin-bottom: 139px;
+  padding-top: 116px;
+
+  background: url('../../img/background.jpg') no-repeat;
+  background-size: 1920px 935px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 302px;
+  }
+  &__wrapper {
+    padding-top: 118px;
+  }
+  &__subtitle-text {
+    position: relative;
+
+    margin-bottom: 25px;
+    &::after {
+      position: absolute;
+      content: '';
+
+      top: 38px;
+      left: 0px;
+
+      width: 40px;
+      height: 9px;
+
+      background: url('../../img/spoon.svg') no-repeat;
+    }
+  }
+  &__title {
+    margin-bottom: 64px;
+
+    letter-spacing: 0.03em;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: 301px 301px;
+    grid-gap: 64px 32px;
+    width: 634px;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    width: 301px;
+    & div {
+     width: 190px;
+    }
+  }
+  &__icon {
+    margin-top: 7px;
+  }
+  &__award-name {
+    margin-bottom: 8px;
+
+    font-size: 23px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: @second-color-text;
+  }
+  &__decorate-word {
+    position: absolute;
+    top: 598px;
+    left: 1023px;
+    z-index: 0;
+
+    font-size: 600px;
+    font-weight: 700;
+    color: #fafafa;
+
+    opacity: 0.8;
+  }
+}
