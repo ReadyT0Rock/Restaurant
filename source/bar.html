@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Ресторан Gericht</title>
+  <link rel='preload' href='fonts/CormorantUpright-400.woff2' type='font/woff2' as='font' crossorigin='anonymous'>
+  <link rel='preload' href='fonts/CormorantUpright-600.woff2' type='font/woff2' as='font' crossorigin='anonymous'>
+  <link rel='preload' href='fonts/CormorantUpright-700.woff2' type='font/woff2' as='font' crossorigin='anonymous'>
+  <link rel='preload' href='fonts/OpenSans-400-italic.woff2' type='font/woff2' as='font' crossorigin='anonymous'>
+  <link rel='preload' href='fonts/OpenSans-400.woff2' type='font/woff2' as='font' crossorigin='anonymous'>
+  <link rel='preload' href='fonts/OpenSans-600.woff2' type='font/woff2' as='font' crossorigin='anonymous'>
+  <link rel='icon' href='favicon.ico'>
+  <link rel='icon' href='img/favicons/favicon.png' type='image/png' sizes='32x32'>
+  <link rel='apple-touch-icon' href='img/favicons/favicon-apple.png'>
+  <link rel='manifest' href='manifest.webmanifest'>
+  <link href='css/style.css' rel='stylesheet' >
+</head>
+
+<body>
+
+  <header class='header header--bar'>
+    <div class='header__container'>
+      <a class='header__logo'>
+        <img class='header__img' src='img/logo-icon.svg' width='199' height='57' alt='логотип ресторана Gericht'>
+      </a>
+      <ul class='navigation'>
+        <li class='navigation__item'>
+          <a class='navigation__link' href='index.html'>Home</a>
+        </li>
+        <li class='navigation__item'>
+          <a class='navigation__link' href='pages.html'>Pages</a>
+        </li>
+        <li class='navigation__item'>
+          <a class='navigation__link' href='contacts-us.html'>Contact Us</a>
+        </li>
+        <li class='navigation__item'>
+          <a class='navigation__link' href='blogs.html'>Blog</a>
+        </li>
+        <li class='navigation__item'>
+          <a class='navigation__link' href='landing.html'>Landing</a>
+        </li>
+      </ul>
+      <div class='user-list'>
+        <a class='user-list__login' href='login.html'>Log In / Registration</a>
+        <a class='user-list__link' href='book-table.html'>Book Table</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class='promo-bar'>
+      <h1 class='visually-hidden'>Бар ресторана Gericht</h1>
+      <div class='promo-bar__container'>
+        <ul class='hashtags hashtags-bar'>
+          <li class='hashtags__item'>
+            <a class='hashtags__link' href='bar.html'>#Bar</a>
+          </li>
+          <li class='hashtags__item'>
+            <a class='hashtags__link' href='gericht.html'>#Gericht</a>
+          </li>
+        </ul>
+        <div class='promo-bar__content'>
+          <h2 class='promo-bar__title subtitle-text'>On The Rocks</h2>
+          <ul class='promo-bar-images'>
+            <li class='promo-bar-images__item promo-bar-images__item--current'>
+              <img class='promo-bar-images__img promo-bar-images__img--current' src='img/bar/promo-bar/promo-background-page-one.jpg' srcset='img/bar/promo-bar/promo-background-page-one@2x.jpg 2x' width='634' height='840' alt=''>
+            </li>
+            <li class='promo-bar-images__item'>
+              <img class='promo-bar-images__img' src='img/bar/promo-bar/promo-background-page-two.jpg' srcset='img/bar/promo-bar/promo-background-page-one@2x.jpg 2x' width='634' height='840' alt=''>
+            </li>
+          </ul>
+        </div>
+        <div class='slider slider--bar'>
+          <ol class='slider__list'>
+            <li class='slider__item'>
+              <button class='slider__button' type='button'>01</button>
+            </li>
+            <li class='slider__item slider__item--decorate'></li>
+            <li class='slider__item'>
+              <button class='slider__button' type='button'>02</button>
+            </li>
+            <li class='slider__item'>
+              <button class='slider__button' type='button'>03</button>
+            </li>
+            <li class='slider__item'>
+              <button class='slider__button' type='button'>04</button>
+            </li>
+          </ol>
+        </div>
+        <div class='promo-bar__scroll promo__scroll'>
+          <a class='promo-bar__scroll-link promo__scroll-link' href='#'>scroll</a>
+        </div>
+      </div>
+    </section>
+
+    <section class='reservations reservations--bar'>
+      <svg class="reservations__decorate-one" width="1920" height="7336">
+        <use href='img/sprite.svg#decorate-bg-one'></use>
+      </svg>
+      <svg class='reservations__decorate-two' width="560" height="7245">
+        <use href='img/sprite.svg#decorate-bg-two'></use>
+      </svg>
+      <div class='reservations__container'>
+        <div class='reservations__wrapper-decorate'>
+          <p class='reservations__subtitle-text subtitle-text'>Reservations</p>
+          <h2 class='reservations__title title'>Book A Table</h2>
+          <form class='reservations__form' method='post' action='#'>
+            <label class='visually-hidden' for='number-of-people'>Количество людей на столик</label>
+            <select class='reservations__select number-of-people' name='number-of-people' id='number-of-people'>
+              <option value='1-person'>1 Person</option>
+              <option value='2-person'>2 Person</option>
+              <option value='2-person'>3 Person</option>
+              <option value='4-person'>4 Person</option>
+              <option value='5-person'>5 Person</option>
+              <option value='6-person'>6 Person</option>
+            </select>
+            <label class='visually-hidden' for='reservations-date'>Выбрать дату</label>
+            <select class='reservations__select reservations-date' name='reservations-date' id='reservations-date'>
+              <option value='12/05/2021'>12/05/2021</option>
+              <option value='13/05/2021'>13/05/2021</option>
+              <option value='14/05/2021'>14/05/2021</option>
+              <option value='15/05/2021'>15/05/2021</option>
+              <option value='16/05/2021'>16/05/2021</option>
+            </select>
+            <label class='visually-hidden' for='reservation-time'>Выбрать время</label>
+            <select class='reservations__select reservations-time' name='reservations-time' id='reservations-time'>
+              <option value='11:00 AM'>11:00 AM</option>
+              <option value='11:30 AM'>11:30 AM</option>
+              <option value='12:00 AM'>12:00 AM</option>
+              <option value='12:30 AM'>12:30 AM</option>
+              <option value='13:00 AM'>13:00 AM</option>
+            </select>
+            <button class='reservations__button button' type='submit'>Book Now</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class='description-bar'>
+      <h2 class='visually-hidden'>О нашем баре</h2>
+      <div class='description-bar__container'>
+          <img class="description-bar__img-beer-tap" src='img/bar/description-bar/beer-tap.jpg' srcset='img/bar/description-bar/beer-tap@2x.jpg 2x' width='523' height='702' alt=''>
+        <div class='description-bar__wrapper'>
+          <img class='description-bar__img-glass-of-beer' src='img/bar/description-bar/glass-of-beer.jpg' srcset='img/bar/description-bar/glass-of-beer@2x.jpg 2x' width='634' height='385' alt=''>
+          <p class='description-bar__subtitle-text subtitle-text'>About Us</p>
+          <h3 class='description-bar__title title'>Food, Drinks, entertainment in one</h3>
+          <p class='description-bar__text text-main-style'>Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat morbi volutpat habitasse interdum mi aliquam In sed odio nec aliquet.</p>
+          <a class='description-bar__button button' href='#'>Know More</a>
+        </div>
+      </div>
+    </section>
+
+    <section class='choose-alcohol'>
+      <h2 class='visually-hidden'>Выбрать алкоголь</h2>
+      <div class='choose-alcohol__container'>
+        <div class='choose-alcohol__wrapper'>
+          <p class='choose-alcohol__subtitle-text subtitle-text'>Wide Range to choose from</p>
+          <h3 class='choose-alcohol__title title'>What’s Your Poison?</h3>
+        </div>
+        <ul class='choose-alcohol__list'>
+          <li class='choose-alcohol__item'>
+            <img class='choose-alcohol__img choose-alcohol__img--beer' src='img/bar/choose-alcohol/beer.jpg' srcset='img/bar/choose-alcohol/beer@2x.jpg 2x' width='412' height='600' alt=''>
+            <div class='choose-alcohol__inner'>
+              <a class='choose-alcohol__link choose-alcohol__link--beer' href='#'>Beer</a>
+            </div>
+          </li>
+          <li class='choose-alcohol__item'>
+            <img class='choose-alcohol__img' src='img/bar/choose-alcohol/wine.jpg' srcset='img/bar/choose-alcohol/wine@2x.jpg 2x' width='412' height='600' alt=''>
+            <div class='choose-alcohol__inner'>
+              <a class='choose-alcohol__link choose-alcohol__link--beer' href='#'>Wine</a>
+            </div>
+          </li>
+          <li class='choose-alcohol__item'>
+            <img class='choose-alcohol__img' src='img/bar/choose-alcohol/coctail.jpg' srcset='img/bar/choose-alcohol/coctail@2x.jpg 2x' width='412' height='600' alt=''>
+            <div class='choose-alcohol__inner'>
+              <a class='choose-alcohol__link choose-alcohol__link--beer' href='#'>Coctail</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class='happy-hours'>
+      <div class='happy-hours__container'>
+        <h2 class='happy-hours__title title'>Happy Hours</h2>
+        <p class='happy-hours__text subtitle-text'>Monday - Friday (4:00 Pm - 7:00 Pm)</p>
+      </div>
+    </section>
+
+    <section class='special-offers'>
+      <div class='special-offers__container'>
+        <div class='special-offers__wrapper'>
+          <p class='special-offers__subtitle-text subtitle-text'>Menu That Fits You Palatte</p>
+          <h2 class='special-offers__title title'>Today's Special</h2>
+        </div>
+        <div class='special-offers__inner'>
+        <div class='special-offers__left-column'>
+          <h3 class='special-offers__subtitle'>Wine & Beer</h3>
+          <ul class='special-offers__list'>
+            <li class='special-offers__item'>
+              Chapel Hill Shiraz
+              <b class='special-offers__price'>$56</b>
+              <p class='special-offers__volume text-main-style'>AU | Bottle</p>
+            </li>
+            <li class='special-offers__item'>
+              Catena Malbec
+              <b class='special-offers__price'>$59</b>
+              <p class='special-offers__volume text-main-style'>AR | Bottle</p>
+            </li>
+            <li class='special-offers__item'>
+              La Vieille Rosé
+              <b class='special-offers__price'>$44</b>
+              <p class='special-offers__volume text-main-style'>FR | 750 ml</p>
+            </li>
+            <li class='special-offers__item'>
+              Rhino Pale Ale
+              <b class='special-offers__price'>$31</b>
+              <p class='special-offers__volume text-main-style'>CA | 750 ml</p>
+            </li>
+            <li class='special-offers__item'>
+              Irish Guinness
+              <b class='special-offers__price'>$26</b>
+              <p class='special-offers__volume text-main-style'>IE | 750 ml</p>
+            </li>
+          </ul>
+        </div>
+        <img class='special-offers__img' width='412' height='660' src='img/index/special-offers/shaker.jpg' srcset='img/index/special-offers/shaker@2x.jpg 2x' alt='набор для приготовления коктелей, а рядом с ним можно заметить разрезанные апельсин, лайм, мята и лед'>
+        <div class='special-offers__right-column'>
+          <h3 class='special-offers__subtitle'>Cocktails</h3>
+          <ul class='special-offers__list'>
+            <li class='special-offers__item'>
+              Aperol Spritz
+              <b class='special-offers__price'>$20</b>
+              <p class='special-offers__volume text-main-style'>Aperol | Villa Marchesi prosecco | soda | 30ml</p>
+            </li>
+            <li class='special-offers__item'>
+              Dark 'N' Stormy
+              <b class='special-offers__price'>$16</b>
+              <p class='special-offers__volume text-main-style'>Dark rum | Ginger beer | Slice of lime. </p>
+            </li>
+            <li class='special-offers__item'>
+              Daiquiri
+              <b class='special-offers__price'>$10</b>
+              <p class='special-offers__volume text-main-style'>Rum | Citrus juice | Sugar</p>
+            </li>
+            <li class='special-offers__item'>
+              Old Fashioned
+              <b class='special-offers__price'>$31</b>
+              <p class='special-offers__volume text-main-style'>Bourbon | Brown sugar | Angostura Bitters</p>
+            </li>
+            <li class='special-offers__item'>
+              Negroni
+              <b class='special-offers__price'>$26</b>
+              <p class='special-offers__volume text-main-style'>Gin | Sweet Vermouth | Campari | Orange garnish</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+        <a class='special-offers__button button' href='special.html'>View More</a>
+      </div>
+    </section>
+
+    <section class='find-us'>
+      <h2 class='visually-hidden'>How to find us</h2>
+      <div class='find-us__container'>
+        <div class='find-us__content'>
+          <p class='find-us__subtitle-text subtitle-text'>Contact</p>
+          <h3 class='find-us__title title'>Find Us</h3>
+          <p class='find-us__text text-main-style'>Lane Ends Bungalow, Whatcroft Hall Lane, Rudheath, CW9 7SG</p>
+          <h4 class='find-us__mode subtitle-text'>Opening Hours</h4>
+          <p class='find-us__time-mode'>Mon - Fri: 10:00 am - 02:00 am</p>
+          <p class='find-us__time-mode find-us__time-mode--output'>Sat - Sun: 10:00 am - 03:00 am</p>
+          <a class='find-us__button button' href='#'>Visit Us</a>
+        </div>
+        <div class='find-us__wrapper-img'>
+          <img class='find-us__img' src='img/bar/find-us/vase.jpg' src='img/bar/find-us/vase@2x.jpg 2x' width='619' height='688' alt='' >
+        </div>
+      </div>
+    </section>
+
+    <section class='subscribe'>
+      <div class='subscribe__container'>
+        <div class='subscribe__wrapper'>
+          <p class='subscribe__subtitle-text subtitle-text'>Newsletter</p>
+          <h2 class='subscribe__title title'>Subscribe To Our Newsletter</h2>
+          <p class='subscribe__text'>And never miss latest Updates!</p>
+          <form class='subscribe__form' action='#' method='post'>
+            <label class='visually-hidden' for='e-mail'>Введите вашу почту</label>
+            <input class='subscribe__field' type='text' name='e-mail' id='e-mail' placeholder='Email Address' required>
+            <button class='subscribe__button' type='submit'>Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class='footer'>
+    <div class='footer__container'>
+      <div class='footer__inner'>
+      <div class='contacts'>
+        <h3 class='contacts__title'>Contact Us</h3>
+        <address class='contacts__text'>9 W 53rd St, New York, NY 10019, USA</address>
+        <a class='contacts__phone' href='tel:12123441230'>+1 212-344-1230</a><br>
+        <a class='contacts__phone' href='tel:12125551230'>+1 212-555-1230</a>
+      </div>
+      <div class='footer__column'>
+        <a class='footer__logo' href='index.html'>
+        <img class='footer__img' src='img/logo-icon-footer.svg' width='289' height='83' alt='логотип ресторана Gericht'>
+      </a>
+        <q class='footer__quotes'>The best way to find yourself is to lose yourself in the service of others."</q>
+         <div class='social'>
+          <ul class='social__list'>
+            <li class='social__item'>
+              <a class='social__link' href='#'>
+                <span class='visually-hidden'>Мы в Тэйсбук</span>
+                <svg class='social__icon' width='24' height='24'>
+                  <use href='img/sprite.svg#icon-facebook'></use>
+                </svg>
+              </a>
+            </li>
+            <li class='social__item'>
+              <a class='social__link' href='#'>
+                <span class='visually-hidden'>Мы в Твиттере</span>
+                <svg class='social__icon' width='24' height='24'>
+                  <use href='img/sprite.svg#icon-twitter'></use>
+                </svg>
+              </a>
+            </li>
+            <li class='social__item'>
+              <a class='social__link' href='#'>
+                <span class='visually-hidden'>Мы в Инстаграм</span>
+                <svg class='social__icon' width='24' height='24'>
+                  <use href='img/sprite.svg#icon-instagram'></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+         </div>
+      </div>
+      <div class='contacts-time'>
+        <h3 class='contacts-time__title'>Working Hours</h3>
+        <p class='contacts-time__text'>Monday-Friday: 08:00 am - 12:00 am</p>
+        <p class='contacts-time__text'>Saturday-Sunday: 07:00am - 11:00 pm</p>
+      </div>
+    </div>
+      <p class='copyright text-main-style'>2021 Gerícht. All Rights reserved.</p>
+      <div class='footer__scroll'>
+        <a class='footer__scroll-link' href='#'>top</a>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+</body>
+
+</html>

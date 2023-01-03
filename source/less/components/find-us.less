@@ -1,0 +1,90 @@
+.find-us {
+  min-height: 992px;
+  padding: 128px 0;
+  margin-bottom: 152px;
+
+  background: url('../../img/background-bar.jpg') no-repeat;
+  background-size: 100% 992px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 302px;
+  }
+  &__content {
+    padding-top: 124px;
+  }
+  &__subtitle-text {
+    position: relative;
+
+    margin-bottom: 25px;
+    &::after {
+      position: absolute;
+      content: '';
+      top: 39px;
+      left: 0;
+
+      width: 40px;
+      height: 9px;
+
+      background: url('../../img/spoon.svg') no-repeat;
+    }
+  }
+  &__title {
+    margin-bottom: 64px;
+  }
+  &__text {
+    margin-bottom: 32px;
+  }
+  &__mode {
+    margin-bottom: 16px;
+
+    color: @second-color-text;
+  }
+  &__time-mode {
+    font-family: @font-OS;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    &--output {
+      margin-top: 16px;
+      margin-bottom: 64px;
+    }
+  }
+  &__button {
+    width: 119px;
+  }
+  &__wrapper-img {
+    position: relative;
+
+    margin-top: 23px;
+    margin-right: 23px;
+    &::before {
+      position: absolute;
+      content: '';
+      top: 277px;
+      left: -24px;
+      z-index: 0;
+
+      width: 435px;
+      height: 435px;
+
+      background-color: #dcca87;
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      top: -24px;
+      right: -24px;
+      z-index: 0;
+
+      width: 435px;
+      height: 435px;
+
+      background-color: #dcca87;
+    }
+  }
+  &__img {
+    position: relative;
+    z-index: 1;
+  }
+}

@@ -1,0 +1,37 @@
+.happy-hours {
+  position: relative;
+
+  min-height: 900px;
+  padding-top: 330px;
+  padding-bottom: 200px;
+  margin-bottom: 152px;
+
+  text-align: center;
+
+  background: url('../../img/bar/happy-hours/happy-hours-bg.jpg') no-repeat;
+  background-size: 100% 900px;
+  &::before {
+    position: absolute;
+    content: '';
+    bottom: -240px;
+    right: 198px;
+
+    width: 146px;
+    height: 146px;
+
+    background: url('../../img/decorate-icon.png') no-repeat;
+  }
+  &__title {
+    margin-bottom: 32px;
+
+    font-size: 128px;
+    line-height: 166px;
+
+    letter-spacing: 0.03em;
+  }
+  &__text {
+    font-size: 32px;
+    line-height: 42px;
+    font-variant-numeric: lining-nums;
+  }
+}
