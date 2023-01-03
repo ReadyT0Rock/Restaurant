@@ -1,0 +1,51 @@
+.description-bar {
+  position: relative;
+
+  min-height: 1045px;
+  padding-top: 124px;
+  margin: 0;
+
+  background: url('../../img/background.jpg') no-repeat;
+  background-size: 1900px 1045px;
+  &::before {
+    position: absolute;
+    content: '';
+    top: -3px;
+    left: 137px;
+
+    width: 146px;
+    height: 146px;
+
+    background: url('../../img/decorate-icon.png') no-repeat;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 302px;
+  }
+  &__img-beer-tap {
+    margin-top: 136px;
+  }
+  &__wrapper {
+    width: 634px;
+  }
+  &__img-glass-of-beer {
+    margin-bottom: 29px;
+  }
+  &__subtitle-text {
+    margin-bottom: 25px;
+  }
+  &__title {
+    margin-bottom: 32px;
+
+    text-transform: capitalize;
+    letter-spacing: 0.03em;
+  }
+  &__text {
+    width: 523px;
+    margin-bottom: 32px;
+  }
+  &__button {
+    width: 141px;
+  }
+}

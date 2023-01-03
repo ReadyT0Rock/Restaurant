@@ -1,0 +1,55 @@
+.choose-alcohol {
+  padding-top: 201px;
+  margin-bottom: 139px;
+  &__container {
+    margin: 0 302px;
+  }
+  &__wrapper {
+    text-align: center;
+  }
+  &__subtitle-text {
+    margin-bottom: 25px;
+  }
+  &__title {
+    margin-bottom: 64px;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 412px);
+    grid-gap: 32px;
+  }
+  &__item {
+    position: relative;
+    &:hover > .choose-alcohol__inner {
+      display: block;
+    }
+  }
+  &__img {
+    box-shadow: 0 0 0 1px #dcca87;
+  }
+  &__inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    display: none;
+    width: 410px;
+    height: 600px;
+    padding-top: 278px;
+    padding-left: 152.5px;
+
+    font-size: 45px;
+    line-height: 58px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+
+    background-color: rgba(12, 12, 12, 0.4);;
+
+    cursor: pointer;
+  }
+  &__link {
+    width: 410px;
+    height: 600px;
+  }
+}
