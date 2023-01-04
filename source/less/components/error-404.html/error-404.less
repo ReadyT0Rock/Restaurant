@@ -1,0 +1,108 @@
+.background-decoration {
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 16px;
+
+    width: 1610px;
+    height: 1080px;
+
+    background: url('../../../img/coming-soon/bg-line-one.svg') no-repeat;
+  }
+  &::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 919px;
+
+    width: 984px;
+    height: 1080px;
+
+    background: url('../../../img/coming-soon/bg-line-two.svg') no-repeat;
+  }
+}
+
+.error-404 {
+  position: relative;
+  min-height: 959px;
+  &::before {
+    position: absolute;
+    content: '';
+    top: -121px;
+    z-index: -1;
+
+    width: 1900px;
+    height: 1099px;
+    background: url('../../img/background.jpg') no-repeat;
+    background-size: 100% 1080px;
+  }
+  &__container {
+    position: relative;
+    z-index: 2;
+
+    margin: 0 646px;
+    margin-bottom: 266px;
+    padding-top: 271px;
+
+    text-align: center;
+    &::before {
+      position: absolute;
+      content: '';
+      bottom: -144px;
+      left: -430px;
+
+      width: 146px;
+      height: 146px;
+
+      background: url('../../img/decorate-icon.png') no-repeat;
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      top: 99px;
+      right: -487px;
+
+      width: 146px;
+      height: 146px;
+
+      background: url('../../img/decorate-icon.png') no-repeat;
+    }
+  }
+  &__title {
+    position: relative;
+
+    margin-bottom: 109px;
+    margin-left: 5px;
+
+    font-size: 293px;
+    line-height: 117px;
+    font-weight: 700;
+    font-variant-numeric: lining-nums;
+    &::after {
+      position: absolute;
+      content: '';
+      top: 174px;
+      left: 260px;
+
+      width: 80px;
+      height: 19px;
+
+      background: url('../../../img/error-404/spoon-big.svg') no-repeat;
+    }
+  }
+  &__description {
+    width: 610px;
+    margin-bottom: 32px;
+
+    font-size: 23px;
+    line-height: 30px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+  }
+  &__link {
+    width: 164px;
+    margin: 0 auto;
+  }
+}
