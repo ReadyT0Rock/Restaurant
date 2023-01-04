@@ -1,0 +1,132 @@
+.background-decoration {
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 16px;
+
+    width: 1610px;
+    height: 1080px;
+
+    background: url('../../../img/coming-soon/bg-line-one.svg') no-repeat;
+  }
+  &::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 919px;
+
+    width: 984px;
+    height: 1080px;
+
+    background: url('../../../img/coming-soon/bg-line-two.svg') no-repeat;
+  }
+}
+
+.coming-soon {
+  position: relative;
+  min-height: 959px;
+  &::before {
+    position: absolute;
+    content: '';
+    top: -121px;
+    z-index: -1;
+
+    width: 1900px;
+    height: 1099px;
+    background: url('../../img/background.jpg') no-repeat;
+    background-size: 100% 1080px;
+  }
+  &__container {
+    position: relative;
+    z-index: 2;
+
+    margin: 0 502px;
+    margin-bottom: 236px;
+    padding-top: 175px;
+
+    text-align: center;
+    &::before {
+      position: absolute;
+      content: '';
+      bottom: -144px;
+      left: -430px;
+
+      width: 146px;
+      height: 146px;
+
+      background: url('../../img/decorate-icon.png') no-repeat;
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      top: 120px;
+      right: -303px;
+
+      width: 146px;
+      height: 146px;
+
+      background: url('../../img/decorate-icon.png') no-repeat;
+    }
+  }
+  &__title {
+    position: relative;
+
+    margin-bottom: 70px;
+
+    font-size: 90px;
+    line-height: 117px;
+    font-weight: 700;
+    &::after {
+      position: absolute;
+      content: '';
+      top: 133px;
+      left: 419px;
+
+      width: 60px;
+      height: 14px;
+
+      background: url('../../../img/coming-soon/spoon-large.svg') no-repeat;
+    }
+  }
+  &__description {
+    width: 741px;
+    margin: 0 auto;
+    margin-bottom: 37px;
+
+    font-family: @font-OS;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+  }
+  &__list {
+    display: flex;
+    margin-bottom: 40px;
+  }
+  &__item:not(:last-child) {
+    margin-right: 140px;
+  }
+  &__number {
+    margin-bottom: 8px;
+
+    font-size: 64px;
+    line-height: 94px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: #f5efdb;
+    font-variant-numeric: lining-nums;
+  }
+  &__text {
+    font-family: @font-CU;
+    font-size: 23px;
+    line-height: 30px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: @third-color-text;
+    text-transform: capitalize;
+  }
+  &__link {
+    width: 164px;
+    margin: 0 auto;
+  }
+}
