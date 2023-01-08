@@ -1,0 +1,30 @@
+.breadcrambs {
+  display: flex;
+
+  font-size: 23px;
+  line-height: 30px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  &__item {
+    position: relative;
+
+    margin-right: 40px;
+    &:not(:last-child)::after {
+      position: absolute;
+      content: '';
+      top: 8px;
+      right: -24px;
+
+      width: 8px;
+      height: 13px;
+
+      background: url('../../img/breadcrambs-arrow.svg') no-repeat;
+    }
+  }
+  &__link:hover {
+    color: @second-color-text;
+  }
+  &--faq {
+    margin-left: 578px;
+  }
+}
