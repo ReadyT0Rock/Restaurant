@@ -1,0 +1,27 @@
+.social {
+  margin: 0 auto;
+  &--card-person {
+    margin-left: 152px;
+    margin-bottom: 5px;
+    .social__icon {
+      &:active {
+        fill: #000000;
+        opacity: 1;
+      }
+    }
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 24px);
+    grid-gap: 16px;
+  }
+  &__icon {
+    fill: #f5efdb;
+    &:hover {
+      fill: @main-color-fill;
+    }
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}
