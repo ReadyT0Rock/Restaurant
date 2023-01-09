@@ -20,11 +20,20 @@
 
       background: url('../../img/breadcrambs-arrow.svg') no-repeat;
     }
+    &:not(:last-child) .breadcrambs__link {
+      &:hover {
+        color: @second-color-text;
+      }
+      &:active {
+        opacity: 0.5;
+      }
+    }
   }
-  &__link:hover {
-    color: @second-color-text;
-  }
+
   &--faq {
     margin-left: 578px;
+  }
+  &--our-team {
+    margin-left: 552px;
   }
 }

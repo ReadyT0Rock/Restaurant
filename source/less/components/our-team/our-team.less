@@ -1,0 +1,97 @@
+.bg-decoration {
+  &::before {
+    position: absolute;
+    content: '';
+    z-index: -1;
+
+    width: 560.91px;
+    height: 4076px;
+    left: 558.91px;
+    top: 1201px;;
+
+    background: url('../../../img/our-team/bg-one.svg') no-repeat;
+
+    opacity: 0.8;
+  }
+  &::after {
+    position: absolute;
+    content: '';
+    z-index: -1;
+
+    width: 1920px;
+    height: 4167px;
+    left: -144.5px;
+    top: 1110.5px;
+
+    background: url('../../../img/our-team/bg-two.svg') no-repeat;
+
+    opacity: 0.8;
+  }
+}
+
+.our-team {
+  margin-bottom: 156px;
+  &__container {
+    margin: 0 302px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 412px);
+    grid-gap: 64px 32px;
+  }
+  &__item {
+    position: relative;
+
+    min-height: 646px;
+  }
+  &__img {
+    margin-bottom: 23px;
+
+    border: 1px solid #dcca87;
+  }
+  &__wrapper-more {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    display: none;
+    width: 412px;
+    height: 520px;
+    padding-top: 406px;
+
+    text-align: center;
+
+    background-color: rgba(12, 12, 12, 0.5);
+  }
+  &__person-name {
+    margin-bottom: 8px;
+
+    font-size: 45px;
+    line-height: 58px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    & > a:hover {
+      color: @second-color-text;
+    }
+  }
+  &__person-post {
+    font-family: @font-OS;
+    letter-spacing: 0.04em;
+  }
+  &__link {
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    &:hover {
+      color: @second-color-text;
+    }
+    &:active {
+      opacity: 0.5;
+    }
+  }
+  &__item:hover  &__wrapper-more {
+    display: block;
+  }
+}
