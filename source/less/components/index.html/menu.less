@@ -1,5 +1,6 @@
 .menu {
   position: relative;
+  z-index: 1;
 
   min-height: 932px;
   margin-bottom: 150px;
@@ -14,6 +15,13 @@
 
     background: url('../../img/decorate-icon.png') no-repeat;
   }
+  &--our-services-decorate {
+    margin-bottom: 0;
+    &::before {
+      top: -133px;
+      left: 1614px;
+    }
+  }
   &__container {
     margin: 0 auto;
     padding: 292px 137px 0;
@@ -26,11 +34,11 @@
     line-height: 83px;
     font-weight: 600;
     letter-spacing: 0.03em;
-    &--current {
+    &:hover {
       border-bottom: 4px solid #ffffff;
     }
     &:hover {
-      color: @third-color-text;
+      color: @second-color-text;
     }
     &--food:hover + .menu__img--food,
     &--food:focus + .menu__img--food {
