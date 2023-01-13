@@ -1,0 +1,75 @@
+.about-us {
+  position: relative;
+
+  margin-bottom: 144px;
+  &::before {
+    position: absolute;
+    content: '';
+    top: -10px;
+    right: 143px;
+
+    width: 146px;
+    height: 146px;
+
+    background: url('../../img/decorate-icon.png') no-repeat;
+  }
+  &::after {
+    position: absolute;
+    content: '';
+    bottom: -192px;
+    left: 136px;
+
+    width: 146px;
+    height: 146px;
+
+    background: url('../../img/decorate-icon.png') no-repeat;
+  }
+  &__container {
+    position: relative;
+
+    margin: 0 302px;
+
+    text-align: center;
+  }
+  &__subtitle-text {
+    position: relative;
+
+    margin-bottom: 25px;
+    &::after {
+      position: absolute;
+      content: '';
+      top: 38px;
+      left: 631px;
+
+      width: 40px;
+      height: 9px;
+
+      background: url('../../img/spoon.svg') no-repeat;
+    }
+  }
+  &__title {
+    margin-bottom: 32px;
+
+    letter-spacing: 0.03em;
+  }
+  &__text {
+    width: 824px;
+    margin: 0 auto 96px;
+  }
+  &__wrapper-video {
+    position: relative;
+
+    min-height: 763px;
+  }
+  &__button {
+    position: absolute;
+    top: 322px;
+    left: 590px;
+
+    width: 120px;
+    height: 120px;
+
+    background: url('../../img/index/restaurant-preview/button-play.png') no-repeat;
+    border: none;
+  }
+}
