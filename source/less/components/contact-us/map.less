@@ -1,0 +1,32 @@
+.map {
+  position: relative;
+
+  margin-bottom: 164px;
+  &::before {
+    position: absolute;
+    content: '';
+    bottom: -58px;
+    right: 93px;
+
+    width: 146px;
+    height: 146px;
+
+    background: url('../../img/decorate-icon.png') no-repeat;
+  }
+  &__container {
+    margin: 0 302px;
+  }
+  &__wrapper {
+    position: relative;
+
+    width: 1300px;
+    height: 500px;
+
+    border: 2px solid @main-color-fill;
+  }
+  &__google-map {
+    position: absolute;
+
+    border: 0;
+  }
+}
