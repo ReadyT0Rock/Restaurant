@@ -48,7 +48,7 @@
     </div>
   </header>
 
-  <main class='bg-decoration'>
+  <main class='main bg-decoration'>
     <section class='contact-us'>
       <div class='header-inner'>
         <img class='header-inner__img-background' src='img/bg-one.jpg' srcset='img/bg-one@2x.jpg' width='1920' height='679' alt=''>
@@ -77,16 +77,17 @@
       </section>
 
       <section class='send-message'>
+        <h2 class='visually-hidden'>submit message</h2>
         <div class='send-message__container'>
           <div class='send-message__wrapper'>
             <form class='send-message__form' action='#' method='get'>
               <lable class='visually-hidden' for='name'>Your name</lable>
-              <input class='send-message__input send-message__input--name' type='text' name='name' id='name' placeholder='Full Name'>
+              <input class='send-message__field send-message__input--name' type='text' name='name' id='name' placeholder='Full Name'>
               <lable class='visually-hidden' for='email'>Your email</lable>
-              <input class='send-message__input send-message__input--email' type='email' name='email' id='email' placeholder='Email Address'>
+              <input class='send-message__field send-message__input--email' type='email' name='email' id='email' placeholder='Email Address'>
               <label class='visually-hidden' for='message'></label>
-              <textarea class='send-message__input send-message__input--message' name='message' id='message' placeholder='Message'></textarea>
-              <button class='send-message__button button' type='submit'>Send</button>
+              <textarea class='send-message__field send-message__input--message' name='message' id='message' placeholder='Message'></textarea>
+              <button class='send-message__button button' type='submit'>Submit</button>
             </form>
           </div>
         <img class='send-message__img' width='483' height='691' src='img/index/awards/dish.jpg' srcset='img/index/awards/dish@2x.jpg 2x' alt='на фото запеченое мясо с брокколи и черри'>
@@ -128,7 +129,7 @@
           <ul class='social__list'>
             <li class='social__item'>
               <a class='social__link' href='#'>
-                <span class='visually-hidden'>Мы в Тэйсбук</span>
+                <span class='visually-hidden'>Мы в Фэйсбук</span>
                 <svg class='social__icon' width='24' height='24'>
                   <use href='img/sprite.svg#icon-facebook'></use>
                 </svg>

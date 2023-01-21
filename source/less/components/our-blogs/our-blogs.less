@@ -1,0 +1,216 @@
+.bg-decoration--our-blogs {
+  &::before {
+    height: 2000px;
+  }
+  &::after {
+    height: 2000px;
+  }
+}
+
+.blogs {
+  min-height: 1747px;
+
+  margin-bottom: 152px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 302px;
+  }
+  &__inner {
+    width: 856px;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 412px);
+    grid-gap: 64px 32px;
+    width: auto;
+    margin-bottom: 64px;
+  }
+  &__img {
+    margin-bottom: 15px;
+    &--sidebar {
+      margin-bottom: 23px;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+
+    font-family: @font-OS;
+    letter-spacing: 0.04em;
+  }
+  &__author-name {
+    font-style: normal;
+  }
+  &__subtitle {
+    margin-bottom: 32px;
+
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    color: @second-color-text;
+    text-transform: capitalize;
+    & > span {
+      background-image: linear-gradient(to right, #dcca87 0%, #dcca87 100%);
+      background-repeat: repeat-x;
+      background-position: 0 89%;
+      background-size: 100% 3px;
+    }
+  }
+  &__text {
+    margin-bottom: 32px;
+  }
+  &__link {
+    font-weight: 700;
+    color: @second-color-text;
+    letter-spacing: 0.04em;
+    &:hover {
+      color: #ffffff;
+    }
+    &:active {
+      opacity: 0.5;
+    }
+  }
+  &__button {
+    margin: 0 auto;
+  }
+}
+
+.sidebar {
+  width: 375px;
+  &__title {
+    margin-bottom: 32px;
+
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    color: @second-color-text;
+    &--search {
+      margin-bottom: 24px;
+    }
+  }
+  &__form {
+    position: relative;
+    width: 100%;
+    &-field {
+      width: 100%;
+      min-height: 31px;
+
+      font-family: @font-OS;
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 0.04em;
+
+      background-color: transparent;
+      border: 0;
+      border-bottom: 1px solid #aaaaaa;
+    }
+    &-button {
+      position: absolute;
+      top: 0;
+      right: -3px;
+
+      width: 25px;
+      height: 25px;
+      padding: 0;
+
+      background-color: transparent;
+      border: 0;
+
+      font-size: 0;
+    }
+  }
+  &__wrapper {
+    padding: 32px;
+
+    background-color: #242424;
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+    &--form {
+      min-height: 161px;
+    }
+    &--categories {
+      min-height: 288px;
+    }
+    &--latest-posts {
+      min-height: 798px;
+    }
+    &--tags {
+      min-height: 210px;
+    }
+    &--share {
+      min-height: 162px;
+      padding-bottom: 23px;
+    }
+  }
+  &__categories {
+    &-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 32px;
+
+      font-family: @font-OS;
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 0.04em;
+      color: #aaaaaa;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &-type {
+      position: relative;
+      &::after {
+        position: absolute;
+        content: '';
+        top: 15px;
+        left: 118px;
+
+        width: 159px;
+        height: 1px;
+
+        background-color: #fafafa;
+      }
+    }
+  }
+  &__tags {
+    &-list {
+      display: flex;
+      margin-bottom: 16px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &-item {
+      position: relative;
+
+      margin-right: 32px;
+      &:last-child {
+        margin-right: 0;
+      }
+      &:not(:last-child):after {
+        position: absolute;
+        content: '';
+        top: 12px;
+        right: -24px;
+
+        width: 16px;
+        height: 1px;
+
+        background-color: @main-color-fill;
+      }
+    }
+    &-link {
+      &:hover {
+        color: @second-color-text;
+      }
+      &:active {
+        color: #ffffff;
+      }
+    }
+  }
+}
