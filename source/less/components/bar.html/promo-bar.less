@@ -7,15 +7,19 @@
     top: -121px;
     z-index: -1;
 
-    width: 1900px;
+    width: 100%;
     height: 1099px;
-    background: url('../../img/background.jpg') no-repeat;
-    background-size: 1920px 1099px;
+    background: url('../img/background.jpg') no-repeat;
+    background-size: 100% 1099px;
+    @media (min-resolution: 2dppx) {
+      background: url('../img/background@2x.jpg') no-repeat;
+    }
   }
   &__container {
     position: relative;
 
-    margin: 0 112px;
+    width: 1702px;
+    margin: 0 auto;
     padding: 0 500px;
   }
   &__content {
@@ -37,8 +41,8 @@
     letter-spacing: 0.05em;
   }
   &__scroll {
-    right: 805px;
-    bottom: -59px;
+    right: 816px;
+    bottom: -60px;
   }
   &__scroll-link:before {
     background: none;
@@ -56,5 +60,5 @@
 
 .hashtags-bar {
   top: 102px;
-  left: -93px;
+  left: -83px;
 }

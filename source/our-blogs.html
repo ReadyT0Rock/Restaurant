@@ -3,7 +3,7 @@
 <head>
   <meta charset='UTF-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <title>Ресторан Gericht</title>
+  <title>Restaurant Gericht</title>
   <link rel='preload' href='fonts/CormorantUpright-400.woff2' type='font/woff2' as='font' crossorigin='anonymous'>
   <link rel='preload' href='fonts/CormorantUpright-600.woff2' type='font/woff2' as='font' crossorigin='anonymous'>
   <link rel='preload' href='fonts/CormorantUpright-700.woff2' type='font/woff2' as='font' crossorigin='anonymous'>
@@ -19,10 +19,10 @@
 
 <body>
 
-  <header class='header header--faq'>
+  <header class='header header--faq' id='go-to-top'>
     <div class='header__container'>
       <a class='header__logo' href='index.html'>
-        <img class='header__img' src='img/logo-icon.svg' width='199' height='57' alt='логотип ресторана Gericht'>
+        <img class='header__img' src='img/logo-icon.svg' width='199' height='57' alt='logo restaurant Gericht'>
       </a>
       <ul class='navigation'>
         <li class='navigation__item'>
@@ -51,7 +51,7 @@
   <main class='main bg-decoration bg-decoration--our-blogs'>
     <section class='our-blogs'>
       <div class='header-inner'>
-        <img class='header-inner__img-background' src='img/bg-one.jpg' srcset='img/bg-one@2x.jpg' width='1920' height='679' alt=''>
+        <img class='header-inner__img-background' src='img/bg-one.jpg' srcset='img/bg-one@2x.jpg' width='1900' height='679' alt='hall for restaurant guests. In the foreground you can see seven tables over which diamond-shaped lamps hang. A little to the left is the bar. The interior is done in black and cream color.'>
         <div class='header-inner__container'>
           <h1 class='header-inner__title title'>Our Blogs</h1>
           <ul class='breadcrambs breadcrambs--our-blogs'>
@@ -73,7 +73,7 @@
         <div class='blogs__inner'>
           <ul class='blogs__list'>
             <li class='blogs__item'>
-              <img class='blogs__img' width='412' height='430' src='img/index/updates/meat.jpg' srcset='img/index/updates/meat@2x.jpg 2x' alt='жаренное мясо на гриле'>
+              <img class='blogs__img' width='412' height='430' src='img/index/updates/meat.jpg' srcset='img/index/updates/meat@2x.jpg 2x' alt='grilled meat'>
               <div class='blogs__wrapper'>
                 <time class='blogs__date' datetime='2021-04-16'>16 Apr 2021</time>
                 <cite class='blogs__author-name'>- Annalisa L</cite>
@@ -82,10 +82,10 @@
                 <span>tips for prepping and caring for your grill</span>
               </h3>
               <p class='blogs__text text-main-style'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
-              <a class='blogs__link' href=''>Read More</a>
+              <a class='blogs__link' href='blog-grill.html'>Read More</a>
             </li>
             <li class='blogs__item'>
-              <img class='blogs__img' width='412' height='430' src='img/index/updates/coctail.jpg' srcset='img/index/updates/coctail@2x.jpg 2x' alt='на деревянном столе стоит коктель в гарненом стакане, с дольками лайма и грейпфрута, на столе так же лежит ложка и ягода вишня'>
+              <img class='blogs__img' width='412' height='430' src='img/index/updates/coctail.jpg' srcset='img/index/updates/coctail@2x.jpg 2x' alt='On a wooden table there is a cocktail in a garnished glass, with lime and grapefruit slices, on the table there is also a speen and a cherry.'>
               <div class='blogs__wrapper'>
                 <time class='blogs__date' datetime='2021-05-23'>23 May 2021</time>
                 <cite class='blogs__author-name'>-John Micheal</cite>
@@ -97,7 +97,7 @@
               <a class='blogs__link' href='#'>Read More</a>
             </li>
             <li class='blogs__item'>
-              <img class='blogs__img' width='412' height='430' src='img/our-blogs/salad.jpg' srcset='img/our-blogs/salad@2x.jpg 2x' alt=''>
+              <img class='blogs__img' width='412' height='430' src='img/our-blogs/salad.jpg' srcset='img/our-blogs/salad@2x.jpg 2x' alt='Salad of red and yellow tomatoes, red onion and green leaves.'>
               <div class='blogs__wrapper'>
                 <time class='blogs__date' datetime='2021-08-06'>06 Mar 2020</time>
                 <cite class='blogs__author-name'>- Andrial M</cite>
@@ -109,7 +109,7 @@
               <a class='blogs__link' href='#'>Read More</a>
             </li>
             <li class='blogs__item'>
-              <img class='blogs__img' width='412' height='430' src='img/our-blogs/chefs.jpg' srcset='img/our-blogs/chefs@2x.jpg 2x' alt=''>
+              <img class='blogs__img' width='412' height='430' src='img/our-blogs/chefs.jpg' srcset='img/our-blogs/chefs@2x.jpg 2x' alt='In the kitchen are two chefs in white shirts and black aprons. The one on the right in the foreground preparing the salad stuffing has a black and white tattoo on his left arm. The one on the left and behind puts oysters on a tray.'>
               <div class='blogs__wrapper'>
                 <time class='blogs__date' datetime='2021-08-06'>17 June 2018</time>
                 <cite class='blogs__author-name'>-Kaityln B</cite>
@@ -142,22 +142,22 @@
             <ul class='sidebar__categories-list'>
               <li class='sidebar__categories-item'>
                 <span class='sidebar__categories-type'>Photography</span>
-                <p>(<span class='sidebar__categories-value categories__categories-value--photography'>1</span>)</p>
+                <p>(<span class='sidebar__categories-value sidebar__categories-value--photography'>1</span>)</p>
               </li>
               <li class='sidebar__categories-item'>
                 <span class='sidebar__categories-type'>Baking</span>
-                <p>(<span class='sidebar__categories-value categories__categories-value--baking'>2</span>)</p>
+                <p>(<span class='sidebar__categories-value sidebar__categories-value--baking'>2</span>)</p>
               </li>
               <li class='sidebar__categories-item'>
                 <span class='sidebar__categories-type'>Cooking Tips</span>
-                <p>(<span class='sidebar__categories-value categories__categories-value--cooking-tips'>6</span>)</p>
+                <p>(<span class='sidebar__categories-value sidebar__categories-value--cooking-tips'>6</span>)</p>
               </li>
             </ul>
           </div>
           <div class='sidebar__wrapper sidebar__wrapper--latest-posts'>
             <h2 class='sidebar__title'>Our Latest Posts</h2>
             <div class='blogs__item'>
-              <img class='blogs__img blogs__img--sidebar' width='311' height='308' src='img/index/updates/coctail.jpg' srcset='img/index/updates/coctail@2x.jpg 2x' alt='на деревянном столе стоит коктель в гарненом стакане, с дольками лайма и грейпфрута, на столе так же лежит ложка и ягода вишня'>
+              <img class='blogs__img blogs__img--sidebar' width='311' height='308' src='img/index/updates/coctail.jpg' srcset='img/index/updates/coctail@2x.jpg 2x' alt='On a wooden table there is a cocktail in a garnished glass, with lime and grapefruit slices, on the table there is also a speen and a cherry.'>
               <div class='blogs__wrapper'>
                 <time class='blogs__date' datetime='2021-05-23'>23 May 2021</time>
                 <cite class='blogs__author-name'>-John Micheal</cite>
@@ -200,7 +200,7 @@
               <ul class='social__list'>
                 <li class='social__item'>
                   <a class='social__link' href='#'>
-                    <span class='visually-hidden'>Мы в Фэйсбук</span>
+                    <span class='visually-hidden'>We're on Facebook</span>
                     <svg class='social__icon' width='24' height='24'>
                       <use href='img/sprite.svg#icon-facebook'></use>
                     </svg>
@@ -208,7 +208,7 @@
                 </li>
                 <li class='social__item'>
                   <a class='social__link' href='#'>
-                    <span class='visually-hidden'>Мы в Твиттере</span>
+                    <span class='visually-hidden'>We're on Twitter</span>
                     <svg class='social__icon' width='24' height='24'>
                       <use href='img/sprite.svg#icon-twitter'></use>
                     </svg>
@@ -216,7 +216,7 @@
                 </li>
                 <li class='social__item'>
                   <a class='social__link' href='#'>
-                    <span class='visually-hidden'>Мы в Инстаграм</span>
+                    <span class='visually-hidden'>We're on Instagram</span>
                     <svg class='social__icon' width='24' height='24'>
                       <use href='img/sprite.svg#icon-instagram'></use>
                     </svg>
@@ -236,8 +236,8 @@
           <h2 class='subscribe__title title'>Subscribe To Our Newsletter</h2>
           <p class='subscribe__text'>And never miss latest Updates!</p>
           <form class='subscribe__form' action='#' method='post'>
-            <label class='visually-hidden' for='e-mail'>Введите вашу почту</label>
-            <input class='subscribe__field' type='text' name='e-mail' id='e-mail' placeholder='Email Address' required>
+            <label class='visually-hidden' for='e-mail'>enter your restaurant</label>
+            <input class='subscribe__field' type='email' name='e-mail' id='e-mail' placeholder='Email Address' required>
             <button class='subscribe__button' type='submit'>Subscribe</button>
           </form>
         </div>
@@ -256,14 +256,14 @@
       </div>
       <div class='footer__column'>
         <a class='footer__logo' href='index.html'>
-        <img class='footer__img' src='img/logo-icon-footer.svg' width='289' height='83' alt='логотип ресторана Gericht'>
+        <img class='footer__img' src='img/logo-icon-footer.svg' width='289' height='83' alt='logo restaurant Gericht'>
       </a>
         <q class='footer__quotes'>The best way to find yourself is to lose yourself in the service of others."</q>
          <div class='social'>
           <ul class='social__list'>
             <li class='social__item'>
               <a class='social__link' href='#'>
-                <span class='visually-hidden'>Мы в Фэйсбук</span>
+                <span class='visually-hidden'>We're on Facebook</span>
                 <svg class='social__icon' width='24' height='24'>
                   <use href='img/sprite.svg#icon-facebook'></use>
                 </svg>
@@ -271,7 +271,7 @@
             </li>
             <li class='social__item'>
               <a class='social__link' href='#'>
-                <span class='visually-hidden'>Мы в Твиттере</span>
+                <span class='visually-hidden'>We're on Twitter</span>
                 <svg class='social__icon' width='24' height='24'>
                   <use href='img/sprite.svg#icon-twitter'></use>
                 </svg>
@@ -279,7 +279,7 @@
             </li>
             <li class='social__item'>
               <a class='social__link' href='#'>
-                <span class='visually-hidden'>Мы в Инстаграм</span>
+                <span class='visually-hidden'>We're on Instagram</span>
                 <svg class='social__icon' width='24' height='24'>
                   <use href='img/sprite.svg#icon-instagram'></use>
                 </svg>
@@ -296,7 +296,7 @@
     </div>
       <p class='copyright text-main-style'>2021 Gerícht. All Rights reserved.</p>
       <div class='footer__scroll'>
-        <a class='footer__scroll-link' href='#'>top</a>
+        <a class='footer__scroll-link' href='#go-to-top'>top</a>
       </div>
     </div>
   </footer>

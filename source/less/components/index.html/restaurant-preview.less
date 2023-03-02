@@ -3,16 +3,22 @@
   &--our-team-margin {
     margin-bottom: 24px;
   }
-  &::before {
-    position: absolute;
-    content: '';
-    top: -156px;
-    left: 87px;
+  &__container {
+    position: relative;
 
-    width: 146px;
-    height: 146px;
+    width: 1900px;
+    margin: 0 auto;
+    &::before {
+      position: absolute;
+      content: '';
+      top: -156px;
+      left: 87px;
 
-    background: url('../../img/decorate-icon.png') no-repeat;
+      width: 146px;
+      height: 146px;
+
+      background: url('../img/decorate-icon.png') no-repeat;
+    }
   }
   &__video {
     width: 1900px;
@@ -20,12 +26,20 @@
   &__button {
     position: absolute;
     top: 318px;
-    left: 890px;
+    left: 50%;
 
     width: 120px;
     height: 120px;
+    padding: 0;
 
-    background: url('../../img/index/restaurant-preview/button-play.png') no-repeat;
+    background: url('../img/index/restaurant-preview/button-play.png') no-repeat;
     border: none;
+    @media (min-resolution: 2dppx) {
+      background: url('../img/index/restaurant-preview/button-play@2x.png') no-repeat;
+      background-size: 120px 120px;
+    }
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }

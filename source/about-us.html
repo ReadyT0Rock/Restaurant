@@ -3,7 +3,7 @@
 <head>
   <meta charset='UTF-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <title>Ресторан Gericht</title>
+  <title>Restaurant Gericht</title>
   <link rel='preload' href='fonts/CormorantUpright-400.woff2' type='font/woff2' as='font' crossorigin='anonymous'>
   <link rel='preload' href='fonts/CormorantUpright-600.woff2' type='font/woff2' as='font' crossorigin='anonymous'>
   <link rel='preload' href='fonts/CormorantUpright-700.woff2' type='font/woff2' as='font' crossorigin='anonymous'>
@@ -19,10 +19,10 @@
 
 <body>
 
-  <header class='header header--faq'>
+  <header class='header header--faq' id='go-to-top'>
     <div class='header__container'>
       <a class='header__logo' href='index.html'>
-        <img class='header__img' src='img/logo-icon.svg' width='199' height='57' alt='логотип ресторана Gericht'>
+        <img class='header__img' src='img/logo-icon.svg' width='199' height='57' alt='logo restaurant Gericht'>
       </a>
       <ul class='navigation'>
         <li class='navigation__item'>
@@ -51,7 +51,7 @@
   <main class='main bg-decoration'>
     <section class='about-us'>
       <div class='header-inner'>
-        <img class='header-inner__img-background' src='img/bg-one.jpg' srcset='img/bg-one@2x.jpg' width='1920' height='679' alt=''>
+        <img class='header-inner__img-background' src='img/bg-one.jpg' srcset='img/bg-one@2x.jpg' width='1900' height='679' alt='hall for restaurant guests. In the foreground you can see seven tables over which diamond-shaped lamps hang. A little to the left is the bar. The interior is done in black and cream color.'>
         <div class='header-inner__container'>
           <h1 class='header-inner__title title'>Welcome To Gerícht</h1>
           <ul class='breadcrambs breadcrambs--about-us'>
@@ -75,10 +75,10 @@
           <div class='our-history__bottom'>
             <div class='our-history__column-left'>
               <p class='our-history__text text-main-style'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>
-              <img class='our-history__img' src='img/about-us/out-history/facade.jpg' srcset='img/about-us/out-history/facade@2x.jpg 2x' width='523' height='566' alt='facade of the building'>
+              <img class='our-history__img' src='img/about-us/out-history/facade.jpg' srcset='img/about-us/out-history/facade@2x.jpg 2x' width='523' height='566' alt='Facade of the building. the main entrance is made in the form of an arch. Doors made of wood with glass inserts with the inscription trattoria. There is a high stool in front of the door, to the right of the door you can see 5 wicker baskets.'>
             </div>
             <div class='our-history__column-right'>
-              <img class='our-history__img our-history__img--interior' src='img/about-us/out-history/interior.jpg' srcset='img/about-us/out-history/interior@2x.jpg 2x' width='634' height='386' alt='interior inner of the building'>
+              <img class='our-history__img our-history__img--interior' src='img/about-us/out-history/interior.jpg' srcset='img/about-us/out-history/interior@2x.jpg 2x' width='634' height='386' alt='Interior inner of the building'>
               <p class='our-history__caption'>over the years</p>
               <h3 class='visually-hidden'>advantages</h3>
               <dl class='advantages'>
@@ -105,7 +105,7 @@
             <source src='#' type='video/webm'>
           </video>
           <button class='about-us__button' type='button'>
-            <span class='visually-hidden'>запустить видео</span>
+            <span class='visually-hidden'>start video</span>
           </button>
         </div>
         </div>
@@ -113,7 +113,7 @@
 
       <section class='blockquote'>
         <div class='blockquote__container'>
-          <img class='blockquote__img' width='585' height='741' src='img/index/blockquote/shef.jpg' srcset='img/index/blockquote/shef@2x.jpg 2x' alt='фото шеф повара Кевин Лио'>
+          <img class='blockquote__img' width='585' height='741' src='img/index/blockquote/shef.jpg' srcset='img/index/blockquote/shef@2x.jpg 2x' alt='photo chef Kevin Lio'>
           <div class='blockquote__wrapper'>
             <h2 class='blockquote__subtitle-text subtitle-text'>Chef's Word</h2>
             <p class='blockquote__title title'>What We Believe In</p>
@@ -179,8 +179,8 @@
         </div>
       </section>
 
-      <section class='gallery gallery--about-us-decorate'>
-        <div class='gallery__container'>
+      <section class='gallery'>
+        <div class='gallery__container gallery__container--about-us-decorate'>
         <div class='gallery__wrapper'>
           <p class='gallery__subtitle-text subtitle-text'>Instagram</p>
           <h2 class='gallery__title title'>Photo Gallery</h2>
@@ -189,11 +189,11 @@
           <a class='gallery__button button' href='photo-gallery.html'>View More</a>
         </div>
         <div class='gallery__wrapper-img'>
-          <img class='gallery__img' width='301' height='447' src='img/index/gallery/pasta.jpg' srcset='img/index/gallery/pasta@2x.jpg 2x' alt='макароны с яйцами и креветками, хаши голубого цвета'>
-          <img class='gallery__img' width='301' height='447' src='img/index/gallery/Beer.jpg' srcset='img/index/gallery/Beer@2x.jpg 2x' alt='пиво в граненых стаканах и льдом'>
-          <img class='gallery__img' width='301' height='447' src='img/index/gallery/egg.jpg' srcset='img/index/gallery/egg@2x.jpg 2x' alt='жареные яйца на хлебцах'>
-          <img class='gallery__img' width='301' height='447' src='img/index/gallery/soup.jpg' srcset='img/index/gallery/soup@2x.jpg 2x' alt='на столе две тарелки с супом приправами и ложками'>
-          <img class='gallery__img' width='301' height='447' src='img/index/gallery/coctail.jpg' srcset='img/index/gallery/coctail@2x.jpg 2x' alt='на фото коктель со сльдом, малиной и кусочками апельсина'>
+          <img class='gallery__img' width='301' height='447' src='img/index/gallery/pasta.jpg' srcset='img/index/gallery/pasta@2x.jpg 2x' alt='pasta with eggs, peas and shrimps, chopsticks blue color'>
+          <img class='gallery__img' width='301' height='447' src='img/index/gallery/Beer.jpg' srcset='img/index/gallery/Beer@2x.jpg 2x' alt='beer in faceted glasses and ice'>
+          <img class='gallery__img' width='301' height='447' src='img/index/gallery/egg.jpg' srcset='img/index/gallery/egg@2x.jpg 2x' alt='fried eggs on bread'>
+          <img class='gallery__img' width='301' height='447' src='img/index/gallery/soup.jpg' srcset='img/index/gallery/soup@2x.jpg 2x' alt='on the table are two plates of soup with spices and spoons'>
+          <img class='gallery__img' width='301' height='447' src='img/index/gallery/coctail.jpg' srcset='img/index/gallery/coctail@2x.jpg 2x' alt='in the photo a cocktail with ice, raspberries and orange slices'>
         </div>
       </div>
       </section>
@@ -205,8 +205,8 @@
           <h2 class='subscribe__title title'>Subscribe To Our Newsletter</h2>
           <p class='subscribe__text'>And never miss latest Updates!</p>
           <form class='subscribe__form' action='#' method='post'>
-            <label class='visually-hidden' for='e-mail'>Введите вашу почту</label>
-            <input class='subscribe__field' type='text' name='e-mail' id='e-mail' placeholder='Email Address' required>
+            <label class='visually-hidden' for='e-mail'>enter your email</label>
+            <input class='subscribe__field' type='email' name='e-mail' id='e-mail' placeholder='Email Address' required>
             <button class='subscribe__button' type='submit'>Subscribe</button>
           </form>
         </div>
@@ -225,14 +225,14 @@
       </div>
       <div class='footer__column'>
         <a class='footer__logo' href='index.html'>
-        <img class='footer__img' src='img/logo-icon-footer.svg' width='289' height='83' alt='логотип ресторана Gericht'>
+        <img class='footer__img' src='img/logo-icon-footer.svg' width='289' height='83' alt='logo restaurant Gericht'>
       </a>
         <q class='footer__quotes'>The best way to find yourself is to lose yourself in the service of others."</q>
-         <div class='social'>
+        <div class='social'>
           <ul class='social__list'>
             <li class='social__item'>
               <a class='social__link' href='#'>
-                <span class='visually-hidden'>Мы в Фэйсбук</span>
+                <span class='visually-hidden'>we're on Facebook</span>
                 <svg class='social__icon' width='24' height='24'>
                   <use href='img/sprite.svg#icon-facebook'></use>
                 </svg>
@@ -240,7 +240,7 @@
             </li>
             <li class='social__item'>
               <a class='social__link' href='#'>
-                <span class='visually-hidden'>Мы в Твиттере</span>
+                <span class='visually-hidden'>We're on Twitter</span>
                 <svg class='social__icon' width='24' height='24'>
                   <use href='img/sprite.svg#icon-twitter'></use>
                 </svg>
@@ -248,14 +248,14 @@
             </li>
             <li class='social__item'>
               <a class='social__link' href='#'>
-                <span class='visually-hidden'>Мы в Инстаграм</span>
+                <span class='visually-hidden'>We're on Instagram</span>
                 <svg class='social__icon' width='24' height='24'>
                   <use href='img/sprite.svg#icon-instagram'></use>
                 </svg>
               </a>
             </li>
           </ul>
-         </div>
+        </div>
       </div>
       <div class='contacts-time'>
         <h3 class='contacts-time__title'>Working Hours</h3>
@@ -265,7 +265,7 @@
     </div>
       <p class='copyright text-main-style'>2021 Gerícht. All Rights reserved.</p>
       <div class='footer__scroll'>
-        <a class='footer__scroll-link' href='#'>top</a>
+        <a class='footer__scroll-link' href='#go-to-top'>top</a>
       </div>
     </div>
   </footer>

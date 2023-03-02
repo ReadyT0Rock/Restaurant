@@ -32,9 +32,22 @@
 .our-team {
   margin-bottom: 156px;
   &__container {
-    margin: 0 302px;
-  }
+    position: relative;
 
+    width: 1300px;
+    margin: 0 auto;
+    &::before {
+      position: absolute;
+      content: '';
+      top: 405px;
+      right: -219px;
+
+      width: 146px;
+      height: 146px;
+
+      background: url('../../img/decorate-icon.png') no-repeat;
+    }
+  }
   &__list {
     display: grid;
     grid-template-columns: repeat(3, 412px);

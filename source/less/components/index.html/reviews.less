@@ -2,24 +2,27 @@
   position: relative;
 
   margin-bottom: 156px;
-  &::before {
-    position: absolute;
-    content: '';
-    top: -200px;
-    right: 279px;
-
-    width: 146px;
-    height: 146px;
-
-    background: url('../../img/decorate-icon.png') no-repeat;
-  }
   &--decorate-position::before {
     top: -72px;
     right: 148px;
 
   }
   &__container {
-    margin: 0 302px;
+    position: relative;
+
+    width: 1300px;
+    margin: 0 auto;
+    &::before {
+      position: absolute;
+      content: '';
+      top: -203px;
+      right: -23px;
+
+      width: 146px;
+      height: 146px;
+
+      background: url('../img/decorate-icon.png') no-repeat;
+    }
   }
   &__wrapper {
     text-align: center;
@@ -38,7 +41,7 @@
       width: 40px;
       height: 9px;
 
-      background: url('../../img/spoon.svg') no-repeat;
+      background: url('../img/spoon.svg') no-repeat;
     }
   }
   &__title {

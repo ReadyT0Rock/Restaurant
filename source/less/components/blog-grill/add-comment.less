@@ -1,0 +1,101 @@
+.add-comment {
+  min-height: 498px;
+  margin-bottom: 152px;
+  &__container {
+    width: 1300px;
+    margin: 0 auto;
+  }
+  &__title {
+    margin-bottom: 40px;
+
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    color: @second-color-text;
+  }
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 635px;
+    & div {
+      position: relative;
+
+      margin-bottom: 48px;
+    }
+    & label {
+      margin-left: 32px;
+
+      font-family: @font-OS;
+      color: @third-color-text;
+      letter-spacing: 0.04em;
+    }
+  }
+  &__field {
+    padding: 16px 19px;
+
+    background-color: transparent;
+    border: 1px solid #f5efdb;
+    &:focus {
+      font-size: 18px;
+      color: #f5efdb;
+    }
+    &:hover::placeholder {
+      color: @second-color-text;
+    }
+    &--message {
+      width: 635px;
+      min-height: 140px;
+      margin-bottom: 48px;
+
+      resize: none;
+    }
+    &--first-name,
+    &--last-name {
+      width: 301px;
+      min-height: 60px;
+      margin-bottom: 48px;
+    }
+    &--last-name {
+      margin-left: auto;
+    }
+    &::placeholder {
+      font-size: 16px;
+      line-height: 28px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+    }
+  }
+  &__checkbox + label::before {
+    position: absolute;
+    content: '';
+    top: 3px;
+    left: 0;
+
+    width: 18px;
+    height: 18px;
+
+    border: 2px solid @main-color-fill;
+    border-radius: 3px;
+
+    cursor: pointer;
+  }
+  &__checkbox:checked + label::after {
+    position: absolute;
+    content: '';
+    top: 3px;
+    left: 0;
+
+    width: 18px;
+    height: 18px;
+
+    background: url('../../../img/checkbox-chacked.svg') no-repeat;
+
+    cursor: pointer;
+  }
+  &__button {
+    width: 113px;
+    min-height: 44px;
+    padding-top: 3px;
+  }
+}

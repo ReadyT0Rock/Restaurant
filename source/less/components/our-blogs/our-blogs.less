@@ -14,7 +14,8 @@
   &__container {
     display: flex;
     justify-content: space-between;
-    margin: 0 302px;
+    width: 1300px;
+    margin: 0 auto;
   }
   &__inner {
     width: 856px;
@@ -107,6 +108,10 @@
       background-color: transparent;
       border: 0;
       border-bottom: 1px solid #aaaaaa;
+      &:focus {
+        font-size: 16px;
+        color: @third-color-text;
+      }
     }
     &-button {
       position: absolute;
@@ -117,10 +122,10 @@
       height: 25px;
       padding: 0;
 
+      font-size: 0;
+
       background-color: transparent;
       border: 0;
-
-      font-size: 0;
     }
   }
   &__wrapper {

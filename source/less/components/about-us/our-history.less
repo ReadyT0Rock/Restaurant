@@ -3,7 +3,21 @@
 
   margin-bottom: 136px;
   &__container {
-    margin: 0 302px;
+    position: relative;
+
+    width: 1300px;
+    margin: 0 auto;
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: -269px;
+      right: -159px;
+
+      width: 146px;
+      height: 146px;
+
+      background: url('../img/decorate-icon.png') no-repeat;
+    }
   }
   &__subtitle-text {
     position: relative;
@@ -18,7 +32,7 @@
       width: 40px;
       height: 9px;
 
-      background: url('../../img/spoon.svg') no-repeat;
+      background: url('../img/spoon.svg') no-repeat;
     }
   }
   &__title {
@@ -85,7 +99,7 @@
         width: 40px;
         height: 9px;
 
-        background: url('../../img/spoon.svg') no-repeat;
+        background: url('../img/spoon.svg') no-repeat;
     }
   }
   &__attribute {

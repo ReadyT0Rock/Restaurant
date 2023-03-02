@@ -5,8 +5,9 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 103px;
-    padding: 0 198px;
+    width: 1680px;
+    margin: 0 auto;
+    padding: 0 190px;
   }
   &__content {
     display: flex;
@@ -73,10 +74,13 @@
   }
   &__scroll {
     position: absolute;
-    bottom: -12px;
-    right: 5px;
+    bottom: -14px;
+    right: -4px;
 
     width: 65px;
+    &:hover {
+      opacity: 0.7;
+    }
     &-link {
       position: relative;
 
@@ -111,7 +115,7 @@
 .hashtags {
   position: absolute;
   top: 310px;
-  left: -76px;
+  left: -85px;
   display: flex;
   font-family: @font-OS;
   font-size: 18px;
@@ -160,12 +164,18 @@
 
     background-color: transparent;
     border: none;
+    &:hover {
+      opacity: 0.7;
+    }
+    &:active {
+      opacity: 0.5;
+    }
   }
 
   &--bar {
     position: absolute;
     top: 736px;
-    right: -57px;
+    right: -47px;
 
     transform: rotate(90deg);
   }
