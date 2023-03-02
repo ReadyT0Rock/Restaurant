@@ -1,35 +1,24 @@
 .about-us {
-  position: relative;
-
   margin-bottom: 144px;
-  &::before {
-    position: absolute;
-    content: '';
-    top: -10px;
-    right: 143px;
 
-    width: 146px;
-    height: 146px;
-
-    background: url('../../img/decorate-icon.png') no-repeat;
-  }
-  &::after {
-    position: absolute;
-    content: '';
-    bottom: -192px;
-    left: 136px;
-
-    width: 146px;
-    height: 146px;
-
-    background: url('../../img/decorate-icon.png') no-repeat;
-  }
   &__container {
     position: relative;
 
-    margin: 0 302px;
+    width: 1300px;
+    margin: 0 auto;
 
     text-align: center;
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: -195px;
+      left: -164px;
+
+      width: 146px;
+      height: 146px;
+
+      background: url('../img/decorate-icon.png') no-repeat;
+    }
   }
   &__subtitle-text {
     position: relative;
@@ -44,7 +33,7 @@
       width: 40px;
       height: 9px;
 
-      background: url('../../img/spoon.svg') no-repeat;
+      background: url('../img/spoon.svg') no-repeat;
     }
   }
   &__title {
@@ -69,7 +58,14 @@
     width: 120px;
     height: 120px;
 
-    background: url('../../img/index/restaurant-preview/button-play.png') no-repeat;
+    background: url('../img/index/restaurant-preview/button-play.png') no-repeat;
     border: none;
+    @media (min-resolution: 2dppx) {
+      background: url('../img/index/restaurant-preview/button-play@2x.png') no-repeat;
+      background-size: 120px 120px;
+    }
+    &:hover {
+      opacity: 0.7;
+    }
   }
 }

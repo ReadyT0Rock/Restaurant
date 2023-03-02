@@ -2,7 +2,9 @@
   position: relative;
   z-index: 1;
 
+  width: 1900px;
   min-height: 932px;
+  margin: 0 auto;
   margin-bottom: 150px;
   &::before {
     position: absolute;
@@ -13,18 +15,14 @@
     width: 146px;
     height: 146px;
 
-    background: url('../../img/decorate-icon.png') no-repeat;
+    background: url('../img/decorate-icon.png') no-repeat;
   }
-  &--our-services-decorate {
+  &--our-services{
     margin-bottom: 0;
-    &::before {
-      top: -133px;
-      left: 1614px;
-    }
   }
   &__container {
     margin: 0 auto;
-    padding: 292px 137px 0;
+    padding: 290px 115px 0;
   }
   &__item {
     margin-bottom: 64px;
@@ -40,16 +38,6 @@
     &:hover {
       color: @second-color-text;
     }
-    &--food:hover + .menu__img--food,
-    &--food:focus + .menu__img--food {
-      transition: 1.5s;
-      opacity: 1;
-    }
-    &--desserts:hover + .menu__img--desserts,
-    &--desserts:focus + .menu__img--desserts {
-      transition: 1.5s;
-      opacity: 1;
-    }
   }
   &__img {
     position: absolute;
@@ -57,10 +45,23 @@
     left: 7px;
     z-index: -1;
 
-    opacity: 0;
     width: 1890px;
+
+    opacity: 0;
     &--bar {
       opacity: 1;
     }
+  }
+  .menu__img--food,
+  .menu__img--desserts {
+    transition: opacity 1.2s linear 0s;
+  }
+  .menu__link--food:hover + .menu__img--food,
+  .menu__link--food:focus + .menu__img--food {
+    opacity: 1;
+  }
+  .menu__link--desserts:hover + .menu__img--desserts,
+  .menu__link--desserts:focus + .menu__img--desserts {
+    opacity: 1;
   }
 }

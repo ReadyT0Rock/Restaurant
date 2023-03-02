@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Restaurant Gericht</title>
+  <link rel='preload' href='fonts/CormorantUpright-400.woff2' type='font/woff2' as='font' crossorigin='anonymous'>
+  <link rel='preload' href='fonts/CormorantUpright-600.woff2' type='font/woff2' as='font' crossorigin='anonymous'>
+  <link rel='preload' href='fonts/CormorantUpright-700.woff2' type='font/woff2' as='font' crossorigin='anonymous'>
+  <link rel='preload' href='fonts/OpenSans-400-italic.woff2' type='font/woff2' as='font' crossorigin='anonymous'>
+  <link rel='preload' href='fonts/OpenSans-400.woff2' type='font/woff2' as='font' crossorigin='anonymous'>
+  <link rel='preload' href='fonts/OpenSans-600.woff2' type='font/woff2' as='font' crossorigin='anonymous'>
+  <link rel='icon' href='favicon.ico'>
+  <link rel='icon' href='img/favicons/favicon.png' type='image/png' sizes='32x32'>
+  <link rel='apple-touch-icon' href='img/favicons/favicon-apple.png'>
+  <link rel='manifest' href='manifest.webmanifest'>
+  <link href='css/style.css' rel='stylesheet'>
+</head>
+
+<body>
+
+  <header class='header header--faq' id='go-to-top'>
+    <div class='header__container'>
+      <a class='header__logo' href='index.html'>
+        <img class='header__img' src='img/logo-icon.svg' width='199' height='57' alt='логотип ресторана Gericht'>
+      </a>
+      <ul class='navigation'>
+        <li class='navigation__item'>
+          <a class='navigation__link' href='index.html'>Home</a>
+        </li>
+        <li class='navigation__item'>
+          <a class='navigation__link' href='pages.html'>Pages</a>
+        </li>
+        <li class='navigation__item'>
+          <a class='navigation__link' href='contacts-us.html'>Contact Us</a>
+        </li>
+        <li class='navigation__item'>
+          <a class='navigation__link' href='blogs.html'>Blog</a>
+        </li>
+        <li class='navigation__item'>
+          <a class='navigation__link' href='landing.html'>Landing</a>
+        </li>
+      </ul>
+      <div class='user-list'>
+        <a class='user-list__login' href='log-in.html'>Log In / Registration</a>
+        <a class='user-list__link' href='book-table.html'>Book Table</a>
+      </div>
+    </div>
+  </header>
+
+  <main class='main bg-decoration'>
+    <section class='our-blogs'>
+      <div class='header-inner'>
+        <img class='header-inner__img-background header-inner__img-background--one' src='img/bg-one.jpg' srcset='img/bg-one@2x.jpg' width='1900' height='679' alt='hall for restaurant guests. In the foreground you can see seven tables over which diamond-shaped lamps hang. A little to the left is the bar. The interior is done in black and cream color.'>
+        <div class='header-inner__container'>
+          <h2 class='header-inner__title title'>Our Blogs</h2>
+          <ul class='breadcrambs'>
+            <li class='breadcrambs__item'>
+              <a class='breadcrambs__link' href='index.html'>Home</a>
+            </li>
+            <li class='breadcrambs__item'>
+              <a class='breadcrambs__link'>Cooking Tips</a>
+            </li>
+            <li class='breadcrambs__item'>
+              <a class='breadcrambs__link'>Tips for Prepping and Caring for your grill</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class='grill'>
+      <div class='grill__container'>
+        <div class='grill__wrapper-article'>
+          <div class='grill__wrapper-header'>
+            <time class='grill__date' datetime='2021-04-16'>16 Apr 2021</time>
+            <cite class='grill__author-name'>- Annalisa L</cite>
+          </div>
+          <h1 class='grill__title title'>Tips for prepping and caring for your grill</h1>
+          <img class='grill__img' width='1300' height='430' src='img/blog-grill/cooking-tips-grill/grill.jpg' srcset='img/blog-grill/cooking-tips-grill/grill@2x.jpg 2x' alt=''>
+          <div class='grill__wrapper-content'>
+            <div class='grill__content'>
+              <p class='grill__text text-main-style'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt
+                pharetra ut lobortis
+                id. Commodo sit libero lacus a egestas penatibus pretium quis lorem. Purus morbi sagittis, faucibus
+                odio.
+                Elementum felis nibh at purus consectetur phasellus lacus, pellentesque dictumst. Pellentesque eu
+                malesuada id
+                vitae risus, libero. Ullamcorper turpis blandit faucibus turpis. Eu elit faucibus leo eget.</p>
+              <h2 class='grill__heading'>How to prepare your grill</h2>
+              <p class='grill__text text-main-style'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt
+                pharetra ut lobortis
+                id. Commodo sit libero lacus a egestas penatibus pretium quis lorem. Purus morbi sagittis, faucibus
+                odio.</p>
+              <ul class='grill__list text-main-style'>
+                <li class='grill__item'>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+                <li class='grill__item'>
+                  <p> Tincidunt pharetra ut lobortis id.</p>
+                </li>
+                <li class='grill__item'>
+                  <p>Commodo sit libero lacus a egestas penatibus pretium quis lorem.</p>
+                </li>
+              </ul>
+              <div class='grill__wrapper-video'>
+                <video class='grill__video' poster='img/blog-grill/cooking-tips-grill/grill-video.jpg'>
+                  <source src='#' type='video/mp4'>
+                  <source src='#' type='video/webm'>
+                </video>
+                <button class='grill__video-button' type='button'>
+                  <span class='visually-hidden'>запустить видео</span>
+                </button>
+              </div>
+              <p class='grill__text text-main-style'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt
+                pharetra ut lobortis
+                id. Commodo sit libero lacus a egestas penatibus pretium quis lorem. Purus morbi sagittis, faucibus
+                odio.
+                Elementum felis nibh at purus consectetur phasellus lacus, pellentesque dictumst. Pellentesque eu
+                malesuada id
+                vitae risus, libero. Ullamcorper turpis blandit faucibus turpis. Eu elit faucibus leo eget.</p>
+              <div class='grill__wrapper-quote'>
+                <span class='grill__quote-quotes grill__quote-quotes--one'>”</span>
+                <p class='grill__quote'>There is no love sincerer than the love of food.</p>
+                <span class='grill__quote-quotes grill__quote-quotes--two'>”</span>
+              </div>
+              <div class='grill__wrapper-inner'>
+                <div>
+                  <h2 class='grill__heading'>How to care for your grill</h2>
+                  <p class='grill__text text-main-style'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tin
+                    cidunt pharetra ut
+                    lobortis id. Commodo sit libero lacus a egestas penatibus pretium quis lorem.</p>
+                  <ul class='grill__list text-main-style'>
+                    <li class='grill__item'>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </li>
+                    <li class='grill__item'>
+                      <p> Tincidunt pharetra ut lobortis id.</p>
+                    </li>
+                    <li class='grill__item'>
+                      <p>Commodo sit libero lacus a egestas penatibus.</p>
+                    </li>
+                  </ul>
+                </div>
+                <img src='img/blog-grill/cooking-tips-grill/cooked-dish.jpg' srcset='img/blog-grill/cooking-tips-grill/cooked-dish@2x.jpg 2x' width='301' height='310' alt=''>
+              </div>
+              <p class='grill__text text-main-style'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt
+                pharetra ut lobortis
+                id. Commodo sit libero lacus a egestas penatibus pretium quis lorem. Purus morbi sagittis, faucibus
+                odio.
+              </p>
+              <div class='grill__wrapper-footer'>
+                <ul class='grill__tags'>
+                  <li class='grill__tags-item'>
+                    <a class='grill__tags-link' href='grilling.html'>#Grilling</a>
+                  </li>
+                  <li class='grill__tags-item'>
+                    <a class='grill__tags-link' href='outdoors.html'>#Outdoors</a>
+                  </li>
+                  <li class='grill__tags-item'>
+                    <a class='grill__tags-link' href='cooking.html'>#Cooking</a>
+                  </li>
+                </ul>
+                <div class='grill__wrapper-comment'>
+                  <a class='grill__link-comment' href='#leave-a-comment'>
+                    <svg class='grill__icon-comment' width="21" height="21">
+                      <use href='img/sprite.svg#comment'></use>
+                    </svg>Comment
+                  </a>
+                </div>
+                <div class='grill__wrapper-like'>
+                  <button class='grill__button-like' type='button'>
+                    <svg class='grill__icon-like' width="21" height="20">
+                      <use href='img/sprite.svg#like'></use>
+                    </svg>Like
+                  </button>
+                  <p aria-hidden='true'>Like</p>
+                </div>
+              </div>
+            </div>
+            <div class='sidebar'>
+              <div class='sidebar__wrapper sidebar__wrapper--form'>
+                <h2 class='sidebar__title sidebar__title--search'>Search Page</h2>
+                <form class='sidebar__form' action='#' method='get'>
+                  <label class='visually-hidden' for='search'>search field</label>
+                  <input class='sidebar__form-field' type='search' name='search' id='search' placeholder='Example' required>
+                  <button class='sidebar__form-button' type='submit'>search
+                    <svg class='sidebar__form-button-icon' width="16" height="16">
+                      <use href='img/sprite.svg#search'></use>
+                    </svg>
+                  </button>
+                </form>
+              </div>
+              <div class='sidebar__wrapper sidebar__wrapper--categories'>
+                <h2 class='sidebar__title'>All Categories</h2>
+                <ul class='sidebar__categories-list'>
+                  <li class='sidebar__categories-item'>
+                    <span class='sidebar__categories-type'>Photography</span>
+                    <p>(<span class='sidebar__categories-value sidebar__categories-value--photography'>1</span>)</p>
+                  </li>
+                  <li class='sidebar__categories-item'>
+                    <span class='sidebar__categories-type'>Baking</span>
+                    <p>(<span class='sidebar__categories-value sidebar__categories-value--baking'>2</span>)</p>
+                  </li>
+                  <li class='sidebar__categories-item'>
+                    <span class='sidebar__categories-type'>Cooking Tips</span>
+                    <p>(<span class='sidebar__categories-value sidebar__categories-value--cooking-tips'>6</span>)</p>
+                  </li>
+                </ul>
+              </div>
+              <div class='sidebar__wrapper sidebar__wrapper--latest-posts'>
+                <h2 class='sidebar__title'>Our Latest Posts</h2>
+                <div class='blogs__item'>
+                  <img class='blogs__img blogs__img--sidebar' width='311' height='308' src='img/index/updates/coctail.jpg' srcset='img/index/updates/coctail@2x.jpg 2x' alt='On a wooden table there is a cocktail in a garnished glass, with lime and grapefruit slices, on the table there is also a speen and a cherry'>
+                  <div class='blogs__wrapper'>
+                    <time class='blogs__date' datetime='2021-05-23'>23 May 2021</time>
+                    <cite class='blogs__author-name'>-John Micheal</cite>
+                  </div>
+                  <h3 class='blogs__subtitle'>
+                    <span>summer cocktails and mocktails</span>
+                  </h3>
+                  <p class='blogs__text text-main-style'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
+                    mattis ipsum turpis elit....</p>
+                  <a class='blogs__link' href='#'>Read More</a>
+                </div>
+              </div>
+              <div class='sidebar__wrapper sidebar__wrapper--tags'>
+                <h2 class='sidebar__title'>Related Tags</h2>
+                <ul class='sidebar__tags-list'>
+                  <li class='sidebar__tags-item'>
+                    <a class='sidebar__tags-link text-main-style' href='grilling.html'>Grilling</a>
+                  </li>
+                  <li class='sidebar__tags-item'>
+                    <a class='sidebar__tags-link text-main-style' href='cooking.html'>Cooking</a>
+                  </li>
+                  <li class='sidebar__tags-item'>
+                    <a class='sidebar__tags-link text-main-style' href='baking.html'>Baking</a>
+                  </li>
+                </ul>
+                <ul class='sidebar__tags-list'>
+                  <li class='sidebar__tags-item'>
+                    <a class='sidebar__tags-link text-main-style' href='cuisines.html'>Cuisines</a>
+                  </li>
+                  <li class='sidebar__tags-item'>
+                    <a class='sidebar__tags-link text-main-style' href='our-team.html'>Chef</a>
+                  </li>
+                  <li class='sidebar__tags-item'>
+                    <a class='sidebar__tags-link text-main-style' href='alcogol-mixing.html'>Alcohol Mixing</a>
+                  </li>
+                </ul>
+              </div>
+              <div class='sidebar__wrapper sidebar__wrapper--share'>
+                <h2 class='sidebar__title'>Share</h2>
+                <div class='social social--sidebar'>
+                  <ul class='social__list'>
+                    <li class='social__item'>
+                      <a class='social__link' href='#'>
+                        <span class='visually-hidden'>We're on Facebook</span>
+                        <svg class='social__icon' width='24' height='24'>
+                          <use href='img/sprite.svg#icon-facebook'></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class='social__item'>
+                      <a class='social__link' href='#'>
+                        <span class='visually-hidden'>We're on Twitter</span>
+                        <svg class='social__icon' width='24' height='24'>
+                          <use href='img/sprite.svg#icon-twitter'></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class='social__item'>
+                      <a class='social__link' href='#'>
+                        <span class='visually-hidden'>We're on Instagram</span>
+                        <svg class='social__icon' width='24' height='24'>
+                          <use href='img/sprite.svg#icon-instagram'></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class='comments'>
+      <div class='comments__wrapper-external'>
+      <div class='comments__container'>
+        <h2 class='visually-hidden'>Comments</h2>
+        <h3 class='comments__title'>Comment(<span class='comments__value'>3</span>)</h3>
+        <ul class='comments__list'>
+          <li class='comments__item'>
+            <img class='comments__author-photo' width='150' height='150' src='img/blog-grill/comments/nora-martin.jpg' srcset='img/blog-grill/comments/nora-martin@2x.jpg 2x' alt='Nora Martin photo'>
+            <div class='comments__content'>
+              <div>
+                <cite class='comments__author-name'>Nora Martin</cite>
+                <button class='comments__button-reply' type='button'>Reply</button>
+              </div>
+              <time class='comments__data' datetime='2020-12-01'>01 Dec 2020</time>
+              <p class='comments__text text-main-style'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                ut eu morbi tincidunt erat egestas quisque ultrices ut. Vel elementum blandit et tellus sit tincidunt
+                nulla non tincidunt.</p>
+            </div>
+          </li>
+          <li class='comments__item'>
+            <img class='comments__author-photo' width='150' height='150' src='img/blog-grill/comments/lara-williams.jpg' srcset='img/blog-grill/comments/lara-williams@2x.jpg 2x' alt='Lara Williams photo'>
+            <div class='comments__content'>
+              <div>
+                <cite class='comments__author-name'>Lara Williams</cite>
+                <button class='comments__button-reply' type='button'>Reply</button>
+              </div>
+              <time class='comments__data' datetime='2020-12-05'>05 Dec 2020</time>
+              <p class='comments__text text-main-style'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                ut eu morbi tincidunt erat egestas quisque ultrices ut. Vel elementum blandit et tellus sit tincidunt
+                nulla non tincidunt.</p>
+            </div>
+          </li>
+          <li class='comments__item comments__item--active'>
+            <img class='comments__author-photo' width='150' height='150' src='img/blog-grill/comments/jane-cooper.jpg' srcset='img/blog-grill/comments/jane-cooper@2x.jpg 2x' alt='Jane Cooper photo'>
+            <div class='comments__content'>
+              <div>
+                <cite class='comments__author-name comments__author-name--active'>Jane Cooper</cite>
+                <button class='comments__button-reply' type='button'>Reply</button>
+              </div>
+              <time class='comments__data' datetime='2020-12-05'>05 Dec 2020</time>
+              <p class='comments__text text-main-style'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                ut eu morbi tincidunt erat egestas quisque ultrices ut.</p>
+              <form class='form' action='#' method='post'>
+                <p class='form__text form__text--whom-answer'>Reply to
+                  <span class='comments__whom'>Nora Martin</span>
+                </p>
+                <button class='form__button-cancel-comment'>Cancel Reply</button>
+                <textarea class='form__field' name='answer' id='answer' placeholder='Hi There! I Love Your Blog...'></textarea>
+                <button class='form__button button' type='submit'>Submit</button>
+              </form>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </section>
+
+    <section class='add-comment'>
+      <div class='add-comment__container'>
+        <h2 class='add-comment__title'>Post A Comment</h2>
+        <form class='add-comment__form' action='#' method='post'>
+          <textarea class='add-comment__field add-comment__field--message' name='comment' id='leave-a-comment' placeholder='Hello There, My Message...'></textarea>
+          <input class='add-comment__field add-comment__field--first-name' type='text' placeholder='First Name'>
+          <input class='add-comment__field add-comment__field--last-name' type='text' placeholder='Last Name'>
+          <div>
+            <input class='add-comment__checkbox visually-hidden' id='save' name='save' type='checkbox' checked>
+            <label for='save'>Save my name and email in this browser for the next time I comment.</label>
+          </div>
+          <button class='add-comment__button button' type='submit'>Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <section class='subscribe subscribe--about-us-decorate-position'>
+      <div class='subscribe__container'>
+        <div class='subscribe__wrapper'>
+          <p class='subscribe__subtitle-text subtitle-text'>Newsletter</p>
+          <h2 class='subscribe__title title'>Subscribe To Our Newsletter</h2>
+          <p class='subscribe__text'>And never miss latest Updates!</p>
+          <form class='subscribe__form' action='#' method='post'>
+            <label class='visually-hidden' for='e-mail'>enter your email</label>
+            <input class='subscribe__field' type='email' name='e-mail' id='e-mail' placeholder='Email Address' required>
+            <button class='subscribe__button' type='submit'>Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class='footer'>
+    <div class='footer__container'>
+      <div class='footer__inner'>
+        <div class='contacts'>
+          <h3 class='contacts__title'>Contact Us</h3>
+          <address class='contacts__text'>9 W 53rd St, New York, NY 10019, USA</address>
+          <a class='contacts__phone' href='tel:12123441230'>+1 212-344-1230</a><br>
+          <a class='contacts__phone' href='tel:12125551230'>+1 212-555-1230</a>
+        </div>
+        <div class='footer__column'>
+          <a class='footer__logo' href='index.html'>
+            <img class='footer__img' src='img/logo-icon-footer.svg' width='289' height='83' alt='logo restaurant Gericht'>
+          </a>
+          <q class='footer__quotes'>The best way to find yourself is to lose yourself in the service of others."</q>
+          <div class='social'>
+            <ul class='social__list'>
+              <li class='social__item'>
+                <a class='social__link' href='#'>
+                  <span class='visually-hidden'>We're on Facebook</span>
+                  <svg class='social__icon' width='24' height='24'>
+                    <use href='img/sprite.svg#icon-facebook'></use>
+                  </svg>
+                </a>
+              </li>
+              <li class='social__item'>
+                <a class='social__link' href='#'>
+                  <span class='visually-hidden'>We're on Twitter</span>
+                  <svg class='social__icon' width='24' height='24'>
+                    <use href='img/sprite.svg#icon-twitter'></use>
+                  </svg>
+                </a>
+              </li>
+              <li class='social__item'>
+                <a class='social__link' href='#'>
+                  <span class='visually-hidden'>We're on Instagram</span>
+                  <svg class='social__icon' width='24' height='24'>
+                    <use href='img/sprite.svg#icon-instagram'></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class='contacts-time'>
+          <h3 class='contacts-time__title'>Working Hours</h3>
+          <p class='contacts-time__text'>Monday-Friday: 08:00 am - 12:00 am</p>
+          <p class='contacts-time__text'>Saturday-Sunday: 07:00am - 11:00 pm</p>
+        </div>
+      </div>
+      <p class='copyright text-main-style'>2021 Gerícht. All Rights reserved.</p>
+      <div class='footer__scroll'>
+        <a class='footer__scroll-link' href='#go-to-top'>top</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

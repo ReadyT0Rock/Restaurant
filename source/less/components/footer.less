@@ -1,13 +1,18 @@
 .footer {
-  position: relative;
+  min-height: 837px;
+  padding: 342px 0 121px 0;
 
-  min-height: 616px;
-  padding: 121px 0;
-
-  background: url('../../img/background.jpg') no-repeat;
-  background-size: 1900px 616px;
+  background: url('../img/background.jpg') no-repeat;
+  background-size: 100% 837px;
+  @media (min-resolution: 2dppx) {
+    background: url('../img/background@2x.jpg') no-repeat;
+    background-size: 100% 837px;
+  }
   &__container {
-    margin: 0 302px;
+    position: relative;
+
+    width: 1300px;
+    margin: 0 auto;
   }
   &__inner {
     display: flex;
@@ -47,8 +52,8 @@
 
   &__scroll {
     position: absolute;
-    top: -71px;
-    right: 79px;
+    top: -192px;
+    right: -223px;
 
     width: 65px;
     &-link {
@@ -77,6 +82,9 @@
 
         background-color: #dcca87;
         background: linear-gradient(#dcca87, 95%,#000000);
+      }
+      &:hover {
+        opacity: 0.7;
       }
     }
   }

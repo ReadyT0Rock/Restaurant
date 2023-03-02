@@ -3,12 +3,30 @@
   padding: 128px 0;
   margin-bottom: 152px;
 
-  background: url('../../img/background.jpg') no-repeat;
+  background: url('../img/background.jpg') no-repeat;
   background-size: 100% 992px;
+  @media (min-resolution: 2dppx) {
+    background: url('../img/background@2x.jpg') no-repeat;
+    background-size: 100% 992px;
+  }
   &__container {
+    position: relative;
+
     display: flex;
     justify-content: space-between;
-    margin: 0 302px;
+    width: 1300px;
+    margin: 0 auto;
+    &::before {
+      position: absolute;
+      content: '';
+      top: -249px;
+      left: -213px;
+
+      width: 146px;
+      height: 146px;
+
+      background: url('../img/decorate-icon.png') no-repeat;
+    }
   }
   &__content {
     padding-top: 124px;
@@ -26,7 +44,7 @@
       width: 40px;
       height: 9px;
 
-      background: url('../../img/spoon.svg') no-repeat;
+      background: url('../img/spoon.svg') no-repeat;
     }
   }
   &__title {

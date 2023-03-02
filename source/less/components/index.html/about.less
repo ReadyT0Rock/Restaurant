@@ -1,31 +1,34 @@
 .about {
   position: relative;
-
-  width: 1900px;
   min-height: 959px;
+  margin: 0 auto;
 
   background: url('../img/background.jpg') no-repeat;
-  background-size: 1920px 959px;
+  background-size: 100% 959px;
+  @media (min-resolution: 2dppx) {
+    background: url('../img/background@2x.jpg') no-repeat;
+    background-size: 100% 959px;
+  }
   &__container {
     position: relative;
     z-index: 1;
 
     display: flex;
     justify-content: space-between;
+    width: 1300px;
     margin: 0 auto;
-    padding: 0 248px;
   }
   &__img {
     position: absolute;
     top: 121px;
-    left: 910px;
+    left: 610px;
 
   }
   &__decorate {
     position: absolute;
     top: 451px;
-    left: 743px;
-    z-index: 0;
+    left: 443px;
+    z-index: -1;
 
     font-size: 631px;
     font-weight: 600;
@@ -34,7 +37,7 @@
 }
 
 .left-column {
-  width: 588px;
+  width: 535px;
   padding-top: 340px;
 
   text-align: right;
@@ -67,9 +70,8 @@
 }
 
 .right-column {
-  width: 575px;
+  width: 511px;
   padding-top: 340px;
-  padding-left: 13px;
   &__title {
     position: relative;
     margin-bottom: 49px;

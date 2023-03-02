@@ -3,7 +3,7 @@
 <head>
   <meta charset='UTF-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <title>Ресторан Gericht</title>
+  <title>Restaurant Gericht</title>
   <link rel='preload' href='fonts/CormorantUpright-400.woff2' type='font/woff2' as='font' crossorigin='anonymous'>
   <link rel='preload' href='fonts/CormorantUpright-600.woff2' type='font/woff2' as='font' crossorigin='anonymous'>
   <link rel='preload' href='fonts/CormorantUpright-700.woff2' type='font/woff2' as='font' crossorigin='anonymous'>
@@ -19,10 +19,10 @@
 
 <body>
 
-  <header class='header header--faq'>
+  <header class='header header--faq' id='go-to-top'>
     <div class='header__container'>
       <a class='header__logo' href='index.html'>
-        <img class='header__img' src='img/logo-icon.svg' width='199' height='57' alt='логотип ресторана Gericht'>
+        <img class='header__img' src='img/logo-icon.svg' width='199' height='57' alt='logo restaurant Gericht'>
       </a>
       <ul class='navigation'>
         <li class='navigation__item'>
@@ -51,7 +51,7 @@
   <main class='main bg-decoration'>
     <section class='our-services'>
       <div class='header-inner'>
-        <img class='header-inner__img-background' src='img/bg-one.jpg' srcset='img/bg-one@2x.jpg' width='1920' height='679' alt=''>
+        <img class='header-inner__img-background' src='img/bg-one.jpg' srcset='img/bg-one@2x.jpg' width='1900' height='679' alt='hall for restaurant guests. In the foreground you can see seven tables over which diamond-shaped lamps hang. A little to the left is the bar. The interior is done in black and cream color.'>
         <div class='header-inner__container'>
           <h1 class='header-inner__title title'>What We Offer</h1>
           <ul class='breadcrambs breadcrambs--our-services'>
@@ -78,21 +78,21 @@
         </div>
       </section>
 
-      <section class='menu menu--our-services-decorate'>
+      <section class='menu menu--our-services'>
         <div class='menu__container'>
-          <h2 class='visually-hidden'>Выбрать меню ресторана</h2>
+          <h2 class='visually-hidden'>choose manu of the restaurant</h2>
           <ul class='menu__list'>
             <li class='menu__item'>
               <a class='menu__link menu__link--current' href='bar.html'>Bar Menu</a>
-              <img class="menu__img menu__img--bar" width="1920" height='900' src='img/index/menu/bar.jpg' srcset='img/index/menu/bar@2x.jpg 2x' alt=''>
+              <img class="menu__img menu__img--bar" width="1920" height='900' src='img/index/menu/bar.jpg' srcset='img/index/menu/bar@2x.jpg 2x' alt='beer in a faceted transparent glass with splashes on a black background'>
             </li>
             <li class='menu__item'>
               <a class='menu__link menu__link--food' href='food-menu.html' >Food Menu</a>
-              <img class="menu__img menu__img--food" width="1920" height='900' src='img/index/menu/food.jpg' srcset='img/index/menu/food@2x.jpg 2x' alt=''>
+              <img class="menu__img menu__img--food" width="1920" height='900' src='img/index/menu/food.jpg' srcset='img/index/menu/food@2x.jpg 2x' alt='gourmet Irish dish with mint leaves, crispy loaf, avocado slice, spices and boiled eggs.'>
             </li>
             <li class='menu__item'>
               <a class='menu__link menu__link--desserts' href='desserts-menu.html'>Desserts Menu</a>
-              <img class="menu__img menu__img--desserts" width="1920" height='900' src='img/index/menu/desserts.jpg' srcset='img/index/menu/desserts@2x.jpg 2x' alt=''>
+              <img class="menu__img menu__img--desserts" width="1920" height='900' src='img/index/menu/desserts.jpg' srcset='img/index/menu/desserts@2x.jpg 2x' alt='There is a speen on a wooden board, a creme brulee cake, 2 orange muffins, and a French dessert in the backgournd. To the right of the board lies a large cone.'>
             </li>
           </ul>
         </div>
@@ -135,8 +135,8 @@
         </div>
       </section>
 
-      <section class='happy-hours happy-hours--our-services-decorate'>
-        <div class='happy-hours__container'>
+      <section class='happy-hours'>
+        <div class='happy-hours__container happy-hours__container--our-services-decorate'>
           <h2 class='happy-hours__title title'>Happy Hours</h2>
           <p class='happy-hours__text subtitle-text'>Monday - Friday (4:00 Pm - 7:00 Pm)</p>
         </div>
@@ -149,8 +149,8 @@
           <h2 class='subscribe__title title'>Subscribe To Our Newsletter</h2>
           <p class='subscribe__text'>And never miss latest Updates!</p>
           <form class='subscribe__form' action='#' method='post'>
-            <label class='visually-hidden' for='e-mail'>Введите вашу почту</label>
-            <input class='subscribe__field' type='text' name='e-mail' id='e-mail' placeholder='Email Address' required>
+            <label class='visually-hidden' for='e-mail'>enter your email</label>
+            <input class='subscribe__field' type='email' name='e-mail' id='e-mail' placeholder='Email Address' required>
             <button class='subscribe__button' type='submit'>Subscribe</button>
           </form>
         </div>
@@ -169,14 +169,14 @@
       </div>
       <div class='footer__column'>
         <a class='footer__logo' href='index.html'>
-        <img class='footer__img' src='img/logo-icon-footer.svg' width='289' height='83' alt='логотип ресторана Gericht'>
+        <img class='footer__img' src='img/logo-icon-footer.svg' width='289' height='83' alt='logo restaurant Gericht'>
       </a>
         <q class='footer__quotes'>The best way to find yourself is to lose yourself in the service of others."</q>
          <div class='social'>
           <ul class='social__list'>
             <li class='social__item'>
               <a class='social__link' href='#'>
-                <span class='visually-hidden'>Мы в Фэйсбук</span>
+                <span class='visually-hidden'>We're on Facebook</span>
                 <svg class='social__icon' width='24' height='24'>
                   <use href='img/sprite.svg#icon-facebook'></use>
                 </svg>
@@ -184,7 +184,7 @@
             </li>
             <li class='social__item'>
               <a class='social__link' href='#'>
-                <span class='visually-hidden'>Мы в Твиттере</span>
+                <span class='visually-hidden'>We're on Twitter</span>
                 <svg class='social__icon' width='24' height='24'>
                   <use href='img/sprite.svg#icon-twitter'></use>
                 </svg>
@@ -192,7 +192,7 @@
             </li>
             <li class='social__item'>
               <a class='social__link' href='#'>
-                <span class='visually-hidden'>Мы в Инстаграм</span>
+                <span class='visually-hidden'>We're on Instagram</span>
                 <svg class='social__icon' width='24' height='24'>
                   <use href='img/sprite.svg#icon-instagram'></use>
                 </svg>
@@ -209,7 +209,7 @@
     </div>
       <p class='copyright text-main-style'>2021 Gerícht. All Rights reserved.</p>
       <div class='footer__scroll'>
-        <a class='footer__scroll-link' href='#'>top</a>
+        <a class='footer__scroll-link' href='#go-to-top'>top</a>
       </div>
     </div>
   </footer>

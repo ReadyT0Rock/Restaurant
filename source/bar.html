@@ -3,7 +3,7 @@
 <head>
   <meta charset='UTF-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <title>Ресторан Gericht</title>
+  <title>Restaurant Gericht</title>
   <link rel='preload' href='fonts/CormorantUpright-400.woff2' type='font/woff2' as='font' crossorigin='anonymous'>
   <link rel='preload' href='fonts/CormorantUpright-600.woff2' type='font/woff2' as='font' crossorigin='anonymous'>
   <link rel='preload' href='fonts/CormorantUpright-700.woff2' type='font/woff2' as='font' crossorigin='anonymous'>
@@ -19,7 +19,7 @@
 
 <body>
 
-  <header class='header header--bar'>
+  <header class='header header--bar' id='go-to-top'>
     <div class='header__container'>
       <a class='header__logo' href='index.html'>
         <img class='header__img' src='img/logo-icon.svg' width='199' height='57' alt='логотип ресторана Gericht'>
@@ -50,7 +50,7 @@
 
   <main class='main'>
     <section class='promo-bar'>
-      <h1 class='visually-hidden'>Бар ресторана Gericht</h1>
+      <h1 class='visually-hidden'>bar restaurant Gericht</h1>
       <div class='promo-bar__container'>
         <ul class='hashtags hashtags-bar'>
           <li class='hashtags__item'>
@@ -64,10 +64,10 @@
           <h2 class='promo-bar__title subtitle-text'>On The Rocks</h2>
           <ul class='promo-bar-images'>
             <li class='promo-bar-images__item promo-bar-images__item--current'>
-              <img class='promo-bar-images__img promo-bar-images__img--current' src='img/bar/promo-bar/promo-background-page-one.jpg' srcset='img/bar/promo-bar/promo-background-page-one@2x.jpg 2x' width='634' height='840' alt=''>
+              <img class='promo-bar-images__img promo-bar-images__img--current' src='img/bar/promo-bar/promo-background-page-one.jpg' srcset='img/bar/promo-bar/promo-background-page-one@2x.jpg 2x' width='634' height='840' alt='Тn the photo there is a bar counter with illumination in a circle, on it you can see a large number of pendant lamps. On the counter itself there are bouquets of flowers, as well as a set for making cocktails. On the counter itself there are bouquets of flowers, as well as a set for making cocktails.'>
             </li>
             <li class='promo-bar-images__item'>
-              <img class='promo-bar-images__img' src='img/bar/promo-bar/promo-background-page-two.jpg' srcset='img/bar/promo-bar/promo-background-page-one@2x.jpg 2x' width='634' height='840' alt=''>
+              <img class='promo-bar-images__img' src='img/bar/promo-bar/promo-background-page-two.jpg' srcset='img/bar/promo-bar/promo-background-page-two@2x.jpg 2x' width='634' height='840' alt='Dining areas overlooking the restaurant kitchen through a large glass window where our chefs prepare incredible dishes for our guests.'>
             </li>
           </ul>
         </div>
@@ -106,7 +106,7 @@
           <p class='reservations__subtitle-text subtitle-text'>Reservations</p>
           <h2 class='reservations__title title'>Book A Table</h2>
           <form class='reservations__form' method='post' action='#'>
-            <label class='visually-hidden'>Количество людей на столик</label>
+            <label class='visually-hidden'>number of people per table</label>
             <select class='reservations__select number-of-people' name='number-of-people' id='number-of-people'>
               <option value='1-person'>1 Person</option>
               <option value='2-person'>2 Person</option>
@@ -115,7 +115,7 @@
               <option value='5-person'>5 Person</option>
               <option value='6-person'>6 Person</option>
             </select>
-            <label class='visually-hidden'>Выбрать дату</label>
+            <label class='visually-hidden'>choose data</label>
             <select class='reservations__select reservations-date' name='reservations-date' id='reservations-date'>
               <option value='12/05/2021'>12/05/2021</option>
               <option value='13/05/2021'>13/05/2021</option>
@@ -123,7 +123,7 @@
               <option value='15/05/2021'>15/05/2021</option>
               <option value='16/05/2021'>16/05/2021</option>
             </select>
-            <label class='visually-hidden'>Выбрать время</label>
+            <label class='visually-hidden'>choose time</label>
             <select class='reservations__select reservations-time' name='reservations-time' id='reservations-time'>
               <option value='11:00 AM'>11:00 AM</option>
               <option value='11:30 AM'>11:30 AM</option>
@@ -138,11 +138,11 @@
     </section>
 
     <section class='description-bar'>
-      <h2 class='visually-hidden'>О нашем баре</h2>
+      <h2 class='visually-hidden'>About our bar</h2>
       <div class='description-bar__container'>
-        <img class="description-bar__img-beer-tap" src='img/bar/description-bar/beer-tap.jpg' srcset='img/bar/description-bar/beer-tap@2x.jpg 2x' width='523' height='702' alt=''>
+        <img class="description-bar__img-beer-tap" src='img/bar/description-bar/beer-tap.jpg' srcset='img/bar/description-bar/beer-tap@2x.jpg 2x' width='523' height='702' alt='Bar counter with four beer taps. Bar counter with four beer taps.'>
         <div class='description-bar__wrapper'>
-          <img class='description-bar__img-glass-of-beer' src='img/bar/description-bar/glass-of-beer.jpg' srcset='img/bar/description-bar/glass-of-beer@2x.jpg 2x' width='634' height='385' alt=''>
+          <img class='description-bar__img-glass-of-beer' src='img/bar/description-bar/glass-of-beer.jpg' srcset='img/bar/description-bar/glass-of-beer@2x.jpg 2x' width='634' height='385' alt='Beer is poured from a glass into another glass filled with two pieces of ice.'>
           <p class='description-bar__subtitle-text subtitle-text'>About Us</p>
           <h3 class='description-bar__title title'>Food, Drinks, entertainment in one</h3>
           <p class='description-bar__text text-main-style'>Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat morbi volutpat habitasse interdum mi aliquam In sed odio nec aliquet.</p>
@@ -152,7 +152,7 @@
     </section>
 
     <section class='choose-alcohol'>
-      <h2 class='visually-hidden'>Выбрать алкоголь</h2>
+      <h2 class='visually-hidden'>Choose alcohol</h2>
       <div class='choose-alcohol__container'>
         <div class='choose-alcohol__wrapper'>
           <p class='choose-alcohol__subtitle-text subtitle-text'>Wide Range to choose from</p>
@@ -160,19 +160,19 @@
         </div>
         <ul class='choose-alcohol__list'>
           <li class='choose-alcohol__item'>
-            <img class='choose-alcohol__img choose-alcohol__img--beer' src='img/bar/choose-alcohol/beer.jpg' srcset='img/bar/choose-alcohol/beer@2x.jpg 2x' width='412' height='600' alt=''>
+            <img class='choose-alcohol__img choose-alcohol__img--beer' src='img/bar/choose-alcohol/beer.jpg' srcset='img/bar/choose-alcohol/beer@2x.jpg 2x' width='412' height='600' alt='A glass in which beer is poured, next to the glass lies 3 pieces of ice.'>
             <div class='choose-alcohol__inner'>
               <a class='choose-alcohol__link choose-alcohol__link--beer' href='#'>Beer</a>
             </div>
           </li>
           <li class='choose-alcohol__item'>
-            <img class='choose-alcohol__img' src='img/bar/choose-alcohol/wine.jpg' srcset='img/bar/choose-alcohol/wine@2x.jpg 2x' width='412' height='600' alt=''>
+            <img class='choose-alcohol__img' src='img/bar/choose-alcohol/wine.jpg' srcset='img/bar/choose-alcohol/wine@2x.jpg 2x' width='412' height='600' alt='Glass in which red wine is poured.'>
             <div class='choose-alcohol__inner'>
               <a class='choose-alcohol__link choose-alcohol__link--beer' href='#'>Wine</a>
             </div>
           </li>
           <li class='choose-alcohol__item'>
-            <img class='choose-alcohol__img' src='img/bar/choose-alcohol/coctail.jpg' srcset='img/bar/choose-alcohol/coctail@2x.jpg 2x' width='412' height='600' alt=''>
+            <img class='choose-alcohol__img' src='img/bar/choose-alcohol/coctail.jpg' srcset='img/bar/choose-alcohol/coctail@2x.jpg 2x' width='412' height='600' alt='Тn the photo a cocktail with ice, raspberries and orange slices.'>
             <div class='choose-alcohol__inner'>
               <a class='choose-alcohol__link choose-alcohol__link--beer' href='#'>Coctail</a>
             </div>
@@ -225,7 +225,7 @@
             </li>
           </ul>
         </div>
-        <img class='special-offers__img' width='412' height='660' src='img/index/special-offers/shaker.jpg' srcset='img/index/special-offers/shaker@2x.jpg 2x' alt='набор для приготовления коктелей, а рядом с ним можно заметить разрезанные апельсин, лайм, мята и лед'>
+        <img class='special-offers__img' width='412' height='660' src='img/index/special-offers/shaker.jpg' srcset='img/index/special-offers/shaker@2x.jpg 2x' alt='A set for making cocktails, and next ot it you can see cut orange, lime, mint and ice.'>
         <div class='special-offers__right-column'>
           <h3 class='special-offers__subtitle'>Cocktails</h3>
           <ul class='special-offers__list'>
@@ -271,10 +271,10 @@
           <h4 class='find-us__mode subtitle-text'>Opening Hours</h4>
           <p class='find-us__time-mode'>Mon - Fri: 10:00 am - 02:00 am</p>
           <p class='find-us__time-mode find-us__time-mode--output'>Sat - Sun: 10:00 am - 03:00 am</p>
-          <a class='find-us__button button' href='#'>Visit Us</a>
+          <a class='find-us__button button' href='contact-us.html'>Visit Us</a>
         </div>
         <div class='find-us__wrapper-img'>
-          <img class='find-us__img' src='img/bar/find-us/vase.jpg' srcset='img/bar/find-us/vase@2x.jpg 2x' width='619' height='688' alt='' >
+          <img class='find-us__img' src='img/bar/find-us/vase.jpg' srcset='img/bar/find-us/vase@2x.jpg 2x' width='619' height='688' alt='Сocktail with lemon slice and mint.'>
         </div>
       </div>
     </section>
@@ -286,8 +286,8 @@
           <h2 class='subscribe__title title'>Subscribe To Our Newsletter</h2>
           <p class='subscribe__text'>And never miss latest Updates!</p>
           <form class='subscribe__form' action='#' method='post'>
-            <label class='visually-hidden' for='e-mail'>Введите вашу почту</label>
-            <input class='subscribe__field' type='text' name='e-mail' id='e-mail' placeholder='Email Address' required>
+            <label class='visually-hidden' for='e-mail'>enter your email</label>
+            <input class='subscribe__field' type='email' name='e-mail' id='e-mail' placeholder='Email Address' required>
             <button class='subscribe__button' type='submit'>Subscribe</button>
           </form>
         </div>
@@ -306,14 +306,14 @@
       </div>
       <div class='footer__column'>
         <a class='footer__logo' href='index.html'>
-        <img class='footer__img' src='img/logo-icon-footer.svg' width='289' height='83' alt='логотип ресторана Gericht'>
+        <img class='footer__img' src='img/logo-icon-footer.svg' width='289' height='83' alt='logo restaurant Gericht'>
       </a>
         <q class='footer__quotes'>The best way to find yourself is to lose yourself in the service of others."</q>
          <div class='social'>
           <ul class='social__list'>
             <li class='social__item'>
               <a class='social__link' href='#'>
-                <span class='visually-hidden'>Мы в Фэйсбук</span>
+                <span class='visually-hidden'>we're on Facebook</span>
                 <svg class='social__icon' width='24' height='24'>
                   <use href='img/sprite.svg#icon-facebook'></use>
                 </svg>
@@ -321,7 +321,7 @@
             </li>
             <li class='social__item'>
               <a class='social__link' href='#'>
-                <span class='visually-hidden'>Мы в Твиттере</span>
+                <span class='visually-hidden'>We're on Twitter</span>
                 <svg class='social__icon' width='24' height='24'>
                   <use href='img/sprite.svg#icon-twitter'></use>
                 </svg>
@@ -329,7 +329,7 @@
             </li>
             <li class='social__item'>
               <a class='social__link' href='#'>
-                <span class='visually-hidden'>Мы в Инстаграм</span>
+                <span class='visually-hidden'>We're on Instagram</span>
                 <svg class='social__icon' width='24' height='24'>
                   <use href='img/sprite.svg#icon-instagram'></use>
                 </svg>
@@ -346,7 +346,7 @@
     </div>
       <p class='copyright text-main-style'>2021 Gerícht. All Rights reserved.</p>
       <div class='footer__scroll'>
-        <a class='footer__scroll-link' href='#'>top</a>
+        <a class='footer__scroll-link' href='#go-to-top'>top</a>
       </div>
     </div>
 

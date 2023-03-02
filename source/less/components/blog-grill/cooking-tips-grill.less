@@ -1,0 +1,255 @@
+.grill {
+  margin-bottom: 253px;
+  &__container {
+    position: relative;
+
+    width: 1300px;
+    min-height: 2392px;
+    margin: 0 auto;
+    &::before {
+      position: absolute;
+      content: '';
+      top: 70%;
+      right: -200px;
+
+      width: 146px;
+      height: 146px;
+
+      background: url('../img/decorate-icon.png') no-repeat;
+    }
+  }
+  &__wrapper-article {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__wrapper-header {
+    display: flex;
+    justify-content: space-between;
+    width: 1300px;
+    margin-bottom: 24px;
+  }
+  &__date,
+  &__author-name {
+    font-family: @font-OS;
+    letter-spacing: 0.04em;
+    font-style: normal;
+  }
+  &__title {
+    margin-bottom: 40px;
+
+    text-transform: capitalize;
+    letter-spacing: 0.03em;
+  }
+  &__img {
+    margin-bottom: 40px;
+  }
+  &__wrapper-content {
+    display: flex;
+    justify-content: space-between;
+    width: 1300px;
+  }
+  &__content {
+    width: 856px;
+  }
+  &__text:first-child {
+    margin-bottom: 40px;
+   }
+   &__text:last-of-type {
+    margin-bottom: 56px;
+   }
+  &__heading {
+    margin-bottom: 32px;
+
+    font-size: 23px;
+    line-height: 30px;
+    font-weight: 700;
+    color: @second-color-text;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    & + .grill__text {
+      margin-bottom: 32px;
+    }
+  }
+  &__list {
+    margin-bottom: 40px;
+  }
+  &__item {
+    margin-bottom: 24px;
+    padding-left: 24px;
+    & > p {
+      position: relative;
+      &::before {
+        position: absolute;
+        content: '';
+        top: 13px;
+        left: -25px;
+
+        width: 16px;
+        height: 1px;
+
+        background-color: @main-color-fill;
+      }
+    }
+  }
+  &__wrapper-video {
+    position: relative;
+
+    margin-bottom: 23px;
+    & + .grill__text {
+      margin-bottom: 40px;
+    }
+  }
+  &__video-button {
+    position: absolute;
+    top: 113px;
+    left: 368px;
+
+    width: 120px;
+    height: 120px;
+
+    background: url('../img/index/restaurant-preview/button-play.png') no-repeat;
+    background-size: 120px 120px;
+    border: none;
+    @media (min-resolution: 2dppx) {
+      background: url('../img/index/restaurant-preview/button-play@2x.png') no-repeat;
+      background-size: 120px 120px;
+    }
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  &__wrapper-quote {
+    position: relative;
+
+    width: 856px;
+    min-height: 188px;
+    padding: 73px 87px;
+    margin-bottom: 39px;
+
+    background-color: #545454;
+    border: 1px solid @main-color-fill;
+  }
+  &__quote {
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+  }
+  &__quote-quotes {
+    position: absolute;
+
+    font-size: 160px;
+    font-weight: 700;
+    color: #aaaaaa;
+    &--one {
+      top: -20px;
+      left: 10px;
+
+      transform: rotate(180deg);
+    }
+    &--two {
+      bottom: -20px;
+      right: 10px;
+    }
+  }
+  &__wrapper-inner {
+    display: flex;
+    justify-content: space-between;
+    width: 856px;
+    & > div {
+      width: 523px;
+    }
+    & > p {
+      margin-bottom: 56px;
+    }
+  }
+  &__wrapper-footer {
+    display: flex;
+
+    font-family: @font-OS;
+    color: #c4c4c4;
+  }
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    width: 470px;
+    &-item {
+      margin-right: 16px;
+    }
+    &-link {
+      letter-spacing: 0.04em;
+      &:hover {
+        color: @second-color-text;
+      }
+      &:active {
+        opacity: 0.5;
+      }
+    }
+  }
+  &__wrapper-comment {
+    position: relative;
+
+    margin-left: auto;
+    margin-right: 32px;
+
+    width: 119px;
+  }
+  &__link-comment {
+    display: block;
+    width: 119px;
+    padding-left: 41px;
+
+    color: #ffffff;
+    &:hover .grill__icon-comment {
+      stroke: #ffffff;
+    }
+    &:focus .grill__icon-comment {
+      stroke: #ffffff;
+    }
+    &:active .grill__icon-comment {
+      opacity: 0.5;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  &__icon-comment {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__wrapper-like {
+    position: relative;
+
+    display: flex;
+    width: 73px;
+    padding-left: 41px;
+  }
+  &__button-like {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 25px;
+    height: 25px;
+    padding: 0;
+
+    font-size: 0;
+
+    background-color: transparent;
+    border: none;
+    &:hover .grill__icon-like{
+      stroke: #ffffff;
+    }
+    &:focus {
+      outline: none;
+    }
+    &--active {
+      stroke: #ffffff;
+    }
+  }
+  &__button-like + p {
+    letter-spacing: 0.04em;
+    color: #ffffff;
+  }
+}

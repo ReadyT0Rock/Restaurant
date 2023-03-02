@@ -3,7 +3,7 @@
 <head>
   <meta charset='UTF-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <title>Ресторан Gericht</title>
+  <title>Restaurant Gericht</title>
   <link rel='preload' href='fonts/CormorantUpright-400.woff2' type='font/woff2' as='font' crossorigin='anonymous'>
   <link rel='preload' href='fonts/CormorantUpright-600.woff2' type='font/woff2' as='font' crossorigin='anonymous'>
   <link rel='preload' href='fonts/CormorantUpright-700.woff2' type='font/woff2' as='font' crossorigin='anonymous'>
@@ -19,10 +19,10 @@
 
 <body>
 
-  <header class='header header--faq'>
+  <header class='header header--faq' id='go-to-top'>
     <div class='header__container'>
       <a class='header__logo' href='index.html'>
-        <img class='header__img' src='img/logo-icon.svg' width='199' height='57' alt='логотип ресторана Gericht'>
+        <img class='header__img' src='img/logo-icon.svg' width='199' height='57' alt='logo restaurant Gericht'>
       </a>
       <ul class='navigation'>
         <li class='navigation__item'>
@@ -48,10 +48,10 @@
     </div>
   </header>
 
-  <main class='main bg-decoration'>
+  <main class='main'>
     <section class='contact-us'>
       <div class='header-inner'>
-        <img class='header-inner__img-background' src='img/bg-one.jpg' srcset='img/bg-one@2x.jpg' width='1920' height='679' alt=''>
+        <img class='header-inner__img-background' src='img/bg-one.jpg' srcset='img/bg-one@2x.jpg' width='1900' height='679' alt='hall for restaurant guests. In the foreground you can see seven tables over which diamond-shaped lamps hang. A little to the left is the bar. The interior is done in black and cream color.'>
         <div class='header-inner__container'>
           <h1 class='header-inner__title title'>Contact Us</h1>
           <ul class='breadcrambs breadcrambs--contact-us'>
@@ -81,12 +81,12 @@
         <div class='send-message__container'>
           <div class='send-message__wrapper'>
             <form class='send-message__form' action='#' method='get'>
-              <lable class='visually-hidden' for='name'>Your name</lable>
-              <input class='send-message__field send-message__input--name' type='text' name='name' id='name' placeholder='Full Name'>
-              <lable class='visually-hidden' for='email'>Your email</lable>
-              <input class='send-message__field send-message__input--email' type='email' name='email' id='email' placeholder='Email Address'>
+              <label class='visually-hidden' for='name'>Your name</label>
+              <input class='send-message__input send-message__input--name' type='text' name='name' id='name' placeholder='Full Name'>
+              <label class='visually-hidden' for='email'>Your email</label>
+              <input class='send-message__input send-message__input--email' type='email' name='email' id='email' placeholder='Email Address'>
               <label class='visually-hidden' for='message'></label>
-              <textarea class='send-message__field send-message__input--message' name='message' id='message' placeholder='Message'></textarea>
+              <textarea class='send-message__input send-message__input--message' name='message' id='message' placeholder='Message'></textarea>
               <button class='send-message__button button' type='submit'>Submit</button>
             </form>
           </div>
@@ -102,8 +102,8 @@
           <h2 class='subscribe__title title'>Subscribe To Our Newsletter</h2>
           <p class='subscribe__text'>And never miss latest Updates!</p>
           <form class='subscribe__form' action='#' method='post'>
-            <label class='visually-hidden' for='e-mail'>Введите вашу почту</label>
-            <input class='subscribe__field' type='text' name='e-mail' id='e-mail' placeholder='Email Address' required>
+            <label class='visually-hidden' for='e-mail'>enter your email</label>
+            <input class='subscribe__field' type='email' name='e-mail' id='e-mail' placeholder='Email Address' required>
             <button class='subscribe__button' type='submit'>Subscribe</button>
           </form>
         </div>
@@ -122,14 +122,14 @@
       </div>
       <div class='footer__column'>
         <a class='footer__logo' href='index.html'>
-        <img class='footer__img' src='img/logo-icon-footer.svg' width='289' height='83' alt='логотип ресторана Gericht'>
+        <img class='footer__img' src='img/logo-icon-footer.svg' width='289' height='83' alt='logo restaurant Gericht'>
       </a>
         <q class='footer__quotes'>The best way to find yourself is to lose yourself in the service of others."</q>
          <div class='social'>
           <ul class='social__list'>
             <li class='social__item'>
               <a class='social__link' href='#'>
-                <span class='visually-hidden'>Мы в Фэйсбук</span>
+                <span class='visually-hidden'>We're on Facebook</span>
                 <svg class='social__icon' width='24' height='24'>
                   <use href='img/sprite.svg#icon-facebook'></use>
                 </svg>
@@ -137,7 +137,7 @@
             </li>
             <li class='social__item'>
               <a class='social__link' href='#'>
-                <span class='visually-hidden'>Мы в Твиттере</span>
+                <span class='visually-hidden'>We're on Twitter</span>
                 <svg class='social__icon' width='24' height='24'>
                   <use href='img/sprite.svg#icon-twitter'></use>
                 </svg>
@@ -145,7 +145,7 @@
             </li>
             <li class='social__item'>
               <a class='social__link' href='#'>
-                <span class='visually-hidden'>Мы в Инстаграм</span>
+                <span class='visually-hidden'>We're on Instagram</span>
                 <svg class='social__icon' width='24' height='24'>
                   <use href='img/sprite.svg#icon-instagram'></use>
                 </svg>
@@ -162,7 +162,7 @@
     </div>
       <p class='copyright text-main-style'>2021 Gerícht. All Rights reserved.</p>
       <div class='footer__scroll'>
-        <a class='footer__scroll-link' href='#'>top</a>
+        <a class='footer__scroll-link' href='#go-to-top'>top</a>
       </div>
     </div>
   </footer>

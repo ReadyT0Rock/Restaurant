@@ -1,5 +1,6 @@
 .breadcrambs {
   display: flex;
+  justify-content: center;
 
   font-size: 23px;
   line-height: 30px;
@@ -9,6 +10,8 @@
     position: relative;
 
     margin-right: 40px;
+
+    text-transform: capitalize;
     &:not(:last-child)::after {
       position: absolute;
       content: '';
@@ -18,7 +21,7 @@
       width: 8px;
       height: 13px;
 
-      background: url('../../img/breadcrambs-arrow.svg') no-repeat;
+      background: url('../img/breadcrambs-arrow.svg') no-repeat;
     }
     &:not(:last-child) .breadcrambs__link {
       &:hover {
@@ -28,19 +31,5 @@
         opacity: 0.5;
       }
     }
-  }
-  &--faq {
-    margin-left: 578px;
-  }
-  &--our-team,
-  &--about-us,
-  &--our-blogs {
-    margin-left: 552px;
-  }
-  &--our-services {
-    margin-left: 539px;
-  }
-  &--contact-us {
-    margin-left: 546px;
   }
 }

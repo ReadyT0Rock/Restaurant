@@ -1,28 +1,40 @@
 .happy-hours {
   position: relative;
 
+  width: 1900px;
   min-height: 900px;
-  padding-top: 330px;
+  padding-top: 334px;
   padding-bottom: 200px;
-  margin-bottom: 152px;
+  margin: 0 auto;
+  margin-bottom: 155px;
 
   text-align: center;
 
-  background: url('../../img/bar/happy-hours/happy-hours-bg.jpg') no-repeat;
-  background-size: 100% 900px;
-  &::before {
-    position: absolute;
-    content: '';
-    bottom: -240px;
-    right: 198px;
-
-    width: 146px;
-    height: 146px;
-
-    background: url('../../img/decorate-icon.png') no-repeat;
+  background: url('../img/bar/happy-hours/happy-hours-bg.jpg') no-repeat;
+  background-size: 1900px 900px;
+  @media (min-resolution: 2dppx) {
+    background: url('../img/bar/happy-hours/happy-hours-bg@2x.jpg') no-repeat;
+    background-size: 1900px 900px;
   }
-  &--our-services-decorate::before {
-    background: none;
+  &__container {
+    position: relative;
+
+    width: 750px;
+    margin: 0 auto;
+    &::before {
+      position: absolute;
+      content: '';
+      bottom: -570px;
+      right: -357px;
+
+      width: 146px;
+      height: 146px;
+
+      background: url('../img/decorate-icon.png') no-repeat;
+    }
+    &--our-services-decorate::before {
+      background: none;
+    }
   }
   &__title {
     margin-bottom: 32px;

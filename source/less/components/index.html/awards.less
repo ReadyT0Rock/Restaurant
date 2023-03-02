@@ -5,8 +5,12 @@
   margin-bottom: 139px;
   padding-top: 116px;
 
-  background: url('../../img/background.jpg') no-repeat;
-  background-size: 1920px 935px;
+  background: url('../img/background.jpg') no-repeat;
+  background-size: 100% 935px;
+  @media (min-resolution: 2dppx) {
+    background: url('../img/background@2x.jpg') no-repeat;
+    background-size: 100% 935px;
+  }
   &--our-team {
     margin-bottom: 10px;
 
@@ -15,7 +19,8 @@
   &__container {
     display: flex;
     justify-content: space-between;
-    margin: 0 302px;
+    width: 1300px;
+    margin: 0 auto;
   }
   &__wrapper {
     padding-top: 118px;
@@ -34,7 +39,7 @@
       width: 40px;
       height: 9px;
 
-      background: url('../../img/spoon.svg') no-repeat;
+      background: url('../img/spoon.svg') no-repeat;
     }
   }
   &__title {
@@ -70,7 +75,7 @@
   &__decorate-word {
     position: absolute;
     top: 598px;
-    left: 1023px;
+    left: 998px;
     z-index: 0;
 
     font-size: 600px;
