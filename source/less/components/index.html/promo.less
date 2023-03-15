@@ -76,12 +76,13 @@
     position: absolute;
     bottom: -14px;
     right: -4px;
+    z-index: 4;
 
     width: 65px;
     &:hover {
       opacity: 0.7;
     }
-    &-link {
+    &-button {
       position: relative;
 
       display: block;
@@ -94,6 +95,9 @@
       color: @second-color-text;
       text-transform: uppercase;
       letter-spacing: 0.04em;
+
+      background: transparent;
+      border: none;
 
       cursor: pointer;
       &::before {

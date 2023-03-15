@@ -76,6 +76,9 @@
 
     margin-top: 23px;
     margin-right: 23px;
+
+    width: 619px;
+    height: 688px;
     &::before {
       position: absolute;
       content: '';
@@ -102,7 +105,18 @@
     }
   }
   &__img {
-    position: relative;
+    position: absolute;
+    content: '';
     z-index: 1;
+
+    width: 619px;
+    height: 688px;
+
+    background: url('../img/bar/find-us/vase.jpg') no-repeat;
+    background-size: 619px 688px;
+    @media (min-resolution: 2dppx) {
+      background: url('../img/bar/find-us/vase@2x.jpg') no-repeat;
+      background-size: 619px 688px;
+    }
   }
 }

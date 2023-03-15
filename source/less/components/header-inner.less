@@ -1,3 +1,20 @@
+@keyframes bg-change {
+  from {
+    background: url('../img/bg-one.jpg') no-repeat;
+    @media (min-resolution: 2dppx) {
+      background: url('../img/bg-one@2x.jpg') no-repeat;
+      background-size: 1900px 679px;
+    }
+  }
+  to {
+    background: url('../img/bg-two.jpg') no-repeat;
+    @media (min-resolution: 2dppx) {
+      background: url('../img/bg-two@2x.jpg') no-repeat;
+      background-size: 1900px 679px;
+    }
+  }
+}
+
 .header-inner {
   position: relative;
 
@@ -6,12 +23,18 @@
   margin: 0 auto;
   margin-bottom: 152px;
   padding-top: 254px;
+
+  background-size: 1900px 679px;
+  animation: bg-change 8s infinite;
+  animation-timing-function: cubic-bezier(0.82, 0.01, 0.32, 1.03);
+  animation-direction: alternate;
+
   &__container {
     width: 1075px;
     margin: 0 auto;
 
     text-align: center;
-   
+
   }
   &__img-background {
     position: absolute;
