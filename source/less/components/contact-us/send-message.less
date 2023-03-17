@@ -74,8 +74,13 @@
 
     background-color: transparent;
     border: 1px solid #f5efdb;
+
+    color: #f5efdb;
     &:hover::placeholder {
       color: @second-color-text;
+    }
+    &:focus {
+      font-size: 18px;
     }
     &--message {
       min-height: 140px;
