@@ -17,12 +17,22 @@
     justify-content: space-between;
     width: 1300px;
     margin: 0 auto;
-  }
-  &__img {
-    position: absolute;
-    top: 121px;
-    left: 610px;
+    &:before {
+      content: '';
+      position: absolute;
 
+      top: 121px;
+      left: 610px;
+
+      width: 84px;
+      height: 703px;
+
+      background: url('../img/index/about/knife.png') no-repeat;
+      @media (min-resolution: 2dppx) {
+        background: url('../img/index/about/knife@2x.png') no-repeat;
+        background-size: 83px 703px;
+      }
+    }
   }
   &__decorate {
     position: absolute;
@@ -50,7 +60,7 @@
       position: absolute;
       content: '';
       top: 90px;
-      left: 549px;
+      left: 490px;
 
       width: 40px;
       height: 9px;

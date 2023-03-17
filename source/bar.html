@@ -14,12 +14,12 @@
   <link rel='icon' href='img/favicons/favicon.png' type='image/png' sizes='32x32'>
   <link rel='apple-touch-icon' href='img/favicons/favicon-apple.png'>
   <link rel='manifest' href='manifest.webmanifest'>
-  <link href='css/style.css' rel='stylesheet' >
+  <link href='css/style.min.css' rel='stylesheet' >
 </head>
 
 <body>
 
-  <header class='header header--bar' id='go-to-top'>
+  <header class='header header--bar'>
     <div class='header__container'>
       <a class='header__logo' href='index.html'>
         <img class='header__img' src='img/logo-icon.svg' width='199' height='57' alt='логотип ресторана Gericht'>
@@ -32,7 +32,7 @@
           <a class='navigation__link' href='pages.html'>Pages</a>
         </li>
         <li class='navigation__item'>
-          <a class='navigation__link' href='contacts-us.html'>Contact Us</a>
+          <a class='navigation__link' href='contact-us.html'>Contact Us</a>
         </li>
         <li class='navigation__item'>
           <a class='navigation__link' href='blogs.html'>Blog</a>
@@ -64,10 +64,10 @@
           <h2 class='promo-bar__title subtitle-text'>On The Rocks</h2>
           <ul class='promo-bar-images'>
             <li class='promo-bar-images__item promo-bar-images__item--current'>
-              <img class='promo-bar-images__img promo-bar-images__img--current' src='img/bar/promo-bar/promo-background-page-one.jpg' srcset='img/bar/promo-bar/promo-background-page-one@2x.jpg 2x' width='634' height='840' alt='Тn the photo there is a bar counter with illumination in a circle, on it you can see a large number of pendant lamps. On the counter itself there are bouquets of flowers, as well as a set for making cocktails. On the counter itself there are bouquets of flowers, as well as a set for making cocktails.'>
+              <img class='promo-bar-images__img promo-bar-images__img-1 promo-bar-images__img--current' src='img/bar/promo-bar/promo-background-page-one.jpg' srcset='img/bar/promo-bar/promo-background-page-one@2x.jpg 2x' width='634' height='840' alt='Тn the photo there is a bar counter with illumination in a circle, on it you can see a large number of pendant lamps. On the counter itself there are bouquets of flowers, as well as a set for making cocktails. On the counter itself there are bouquets of flowers, as well as a set for making cocktails.'>
             </li>
             <li class='promo-bar-images__item'>
-              <img class='promo-bar-images__img' src='img/bar/promo-bar/promo-background-page-two.jpg' srcset='img/bar/promo-bar/promo-background-page-two@2x.jpg 2x' width='634' height='840' alt='Dining areas overlooking the restaurant kitchen through a large glass window where our chefs prepare incredible dishes for our guests.'>
+              <img class='promo-bar-images__img promo-bar-images__img-2' src='img/bar/promo-bar/promo-background-page-two.jpg' srcset='img/bar/promo-bar/promo-background-page-two@2x.jpg 2x' width='634' height='840' alt='Dining areas overlooking the restaurant kitchen through a large glass window where our chefs prepare incredible dishes for our guests.'>
             </li>
           </ul>
         </div>
@@ -89,7 +89,7 @@
           </ol>
         </div>
         <div class='promo-bar__scroll promo__scroll'>
-          <a class='promo-bar__scroll-link promo__scroll-link' href='#'>scroll</a>
+          <button class='promo-bar__scroll-button promo__scroll-button'>scroll</button>
         </div>
       </div>
     </section>
@@ -225,7 +225,6 @@
             </li>
           </ul>
         </div>
-        <img class='special-offers__img' width='412' height='660' src='img/index/special-offers/shaker.jpg' srcset='img/index/special-offers/shaker@2x.jpg 2x' alt='A set for making cocktails, and next ot it you can see cut orange, lime, mint and ice.'>
         <div class='special-offers__right-column'>
           <h3 class='special-offers__subtitle'>Cocktails</h3>
           <ul class='special-offers__list'>
@@ -274,7 +273,7 @@
           <a class='find-us__button button' href='contact-us.html'>Visit Us</a>
         </div>
         <div class='find-us__wrapper-img'>
-          <img class='find-us__img' src='img/bar/find-us/vase.jpg' srcset='img/bar/find-us/vase@2x.jpg 2x' width='619' height='688' alt='Сocktail with lemon slice and mint.'>
+          <span class='find-us__img'></span>
         </div>
       </div>
     </section>
@@ -309,7 +308,7 @@
         <img class='footer__img' src='img/logo-icon-footer.svg' width='289' height='83' alt='logo restaurant Gericht'>
       </a>
         <q class='footer__quotes'>The best way to find yourself is to lose yourself in the service of others."</q>
-         <div class='social'>
+          <div class='social'>
           <ul class='social__list'>
             <li class='social__item'>
               <a class='social__link' href='#'>
@@ -336,7 +335,7 @@
               </a>
             </li>
           </ul>
-         </div>
+          </div>
       </div>
       <div class='contacts-time'>
         <h3 class='contacts-time__title'>Working Hours</h3>
@@ -346,13 +345,13 @@
     </div>
       <p class='copyright text-main-style'>2021 Gerícht. All Rights reserved.</p>
       <div class='footer__scroll'>
-        <a class='footer__scroll-link' href='#go-to-top'>top</a>
+        <button class='footer__scroll-button' type='button'>top</button>
       </div>
     </div>
 
   </footer>
 
-
+  <script src='js/script.min.js'></script>
 
 </body>
 

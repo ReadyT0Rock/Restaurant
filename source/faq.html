@@ -14,12 +14,12 @@
   <link rel='icon' href='img/favicons/favicon.png' type='image/png' sizes='32x32'>
   <link rel='apple-touch-icon' href='img/favicons/favicon-apple.png'>
   <link rel='manifest' href='manifest.webmanifest'>
-  <link href='css/style.css' rel='stylesheet' >
+  <link href='css/style.min.css' rel='stylesheet' >
 </head>
 
 <body>
 
-  <header class='header header--faq' id='go-to-top'>
+  <header class='header header--faq'>
     <div class='header__container'>
       <a class='header__logo' href='index.html'>
         <img class='header__img' src='img/logo-icon.svg' width='199' height='57' alt='logo restaurant Gericht'>
@@ -32,7 +32,7 @@
           <a class='navigation__link' href='pages.html'>Pages</a>
         </li>
         <li class='navigation__item'>
-          <a class='navigation__link' href='contacts-us.html'>Contact Us</a>
+          <a class='navigation__link' href='contact-us.html'>Contact Us</a>
         </li>
         <li class='navigation__item'>
           <a class='navigation__link' href='blogs.html'>Blog</a>
@@ -51,7 +51,6 @@
   <main class='main'>
     <section class='faq'>
       <div class='header-inner'>
-        <img class='header-inner__img-background' src='img/bg-one.jpg' srcset='img/bg-one@2x.jpg' width='1900' height='679' alt='hall for restaurant guests. In the foreground you can see seven tables over which diamond-shaped lamps hang. A little to the left is the bar. The interior is done in black and cream color.'>
         <div class='header-inner__container header-inner__container--faq'>
           <h1 class='header-inner__title title'>Frequently Asked Questions</h1>
           <ul class='breadcrambs'>
@@ -147,7 +146,7 @@
         <img class='footer__img' src='img/logo-icon-footer.svg' width='289' height='83' alt='logo restaurant Gericht'>
       </a>
         <q class='footer__quotes'>The best way to find yourself is to lose yourself in the service of others."</q>
-         <div class='social'>
+          <div class='social'>
           <ul class='social__list'>
             <li class='social__item'>
               <a class='social__link' href='#'>
@@ -174,7 +173,7 @@
               </a>
             </li>
           </ul>
-         </div>
+          </div>
       </div>
       <div class='contacts-time'>
         <h3 class='contacts-time__title'>Working Hours</h3>
@@ -184,11 +183,13 @@
     </div>
       <p class='copyright text-main-style'>2021 Gerícht. All Rights reserved.</p>
       <div class='footer__scroll'>
-        <a class='footer__scroll-link' href='#go-to-top'>top</a>
+        <button class='footer__scroll-button' type='button'>top</button>
       </div>
     </div>
 
   </footer>
+
+  <script src='js/script.min.js'></script>
 
 </body>
 

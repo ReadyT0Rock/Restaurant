@@ -15,12 +15,12 @@
   <link rel='icon' href='img/favicons/favicon.png' type='image/png' sizes='32x32'>
   <link rel='apple-touch-icon' href='img/favicons/favicon-apple.png'>
   <link rel='manifest' href='manifest.webmanifest'>
-  <link href='css/style.css' rel='stylesheet'>
+  <link href='css/style.min.css' rel='stylesheet'>
 </head>
 
 <body>
 
-  <header class='header header--faq' id='go-to-top'>
+  <header class='header header--faq'>
     <div class='header__container'>
       <a class='header__logo' href='index.html'>
         <img class='header__img' src='img/logo-icon.svg' width='199' height='57' alt='логотип ресторана Gericht'>
@@ -33,7 +33,7 @@
           <a class='navigation__link' href='pages.html'>Pages</a>
         </li>
         <li class='navigation__item'>
-          <a class='navigation__link' href='contacts-us.html'>Contact Us</a>
+          <a class='navigation__link' href='contact-us.html'>Contact Us</a>
         </li>
         <li class='navigation__item'>
           <a class='navigation__link' href='blogs.html'>Blog</a>
@@ -52,7 +52,6 @@
   <main class='main bg-decoration'>
     <section class='our-blogs'>
       <div class='header-inner'>
-        <img class='header-inner__img-background header-inner__img-background--one' src='img/bg-one.jpg' srcset='img/bg-one@2x.jpg' width='1900' height='679' alt='hall for restaurant guests. In the foreground you can see seven tables over which diamond-shaped lamps hang. A little to the left is the bar. The interior is done in black and cream color.'>
         <div class='header-inner__container'>
           <h2 class='header-inner__title title'>Our Blogs</h2>
           <ul class='breadcrambs'>
@@ -60,7 +59,7 @@
               <a class='breadcrambs__link' href='index.html'>Home</a>
             </li>
             <li class='breadcrambs__item'>
-              <a class='breadcrambs__link'>Cooking Tips</a>
+              <a class='breadcrambs__link' href='#'>Cooking Tips</a>
             </li>
             <li class='breadcrambs__item'>
               <a class='breadcrambs__link'>Tips for Prepping and Caring for your grill</a>
@@ -163,11 +162,11 @@
                   </li>
                 </ul>
                 <div class='grill__wrapper-comment'>
-                  <a class='grill__link-comment' href='#leave-a-comment'>
+                  <button class='grill__button-comment' type='button'>
                     <svg class='grill__icon-comment' width="21" height="21">
                       <use href='img/sprite.svg#comment'></use>
                     </svg>Comment
-                  </a>
+                  </button>
                 </div>
                 <div class='grill__wrapper-like'>
                   <button class='grill__button-like' type='button'>
@@ -329,13 +328,13 @@
               <time class='comments__data' datetime='2020-12-05'>05 Dec 2020</time>
               <p class='comments__text text-main-style'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
                 ut eu morbi tincidunt erat egestas quisque ultrices ut.</p>
-              <form class='form' action='#' method='post'>
-                <p class='form__text form__text--whom-answer'>Reply to
+              <form class='form-comment-reply' action='#' method='post'>
+                <p class='form-comment-reply__text form-comment-reply__text--whom-answer'>Reply to
                   <span class='comments__whom'>Nora Martin</span>
                 </p>
-                <button class='form__button-cancel-comment'>Cancel Reply</button>
-                <textarea class='form__field' name='answer' id='answer' placeholder='Hi There! I Love Your Blog...'></textarea>
-                <button class='form__button button' type='submit'>Submit</button>
+                <button class='form-comment-reply__button-cancel-comment'>Cancel Reply</button>
+                <textarea class='form-comment-reply__field' name='answer' id='answer' placeholder='Hi There! I Love Your Blog...'></textarea>
+                <button class='form-comment-reply__button button' type='submit'>Submit</button>
               </form>
             </div>
           </li>
@@ -427,10 +426,13 @@
       </div>
       <p class='copyright text-main-style'>2021 Gerícht. All Rights reserved.</p>
       <div class='footer__scroll'>
-        <a class='footer__scroll-link' href='#go-to-top'>top</a>
+        <button class='footer__scroll-button' type='button'>top</button>
       </div>
     </div>
+
   </footer>
+
+  <script src='js/script.min.js'></script>
 
 </body>
 

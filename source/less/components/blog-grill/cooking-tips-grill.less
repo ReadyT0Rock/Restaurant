@@ -53,10 +53,10 @@
   }
   &__text:first-child {
     margin-bottom: 40px;
-   }
-   &__text:last-of-type {
+  }
+  &__text:last-of-type {
     margin-bottom: 56px;
-   }
+  }
   &__heading {
     margin-bottom: 32px;
 
@@ -194,12 +194,15 @@
 
     width: 119px;
   }
-  &__link-comment {
+  &__button-comment {
     display: block;
     width: 119px;
     padding-left: 41px;
 
     color: #ffffff;
+
+    background: transparent;
+    border: none;
     &:hover .grill__icon-comment {
       stroke: #ffffff;
     }
@@ -239,17 +242,17 @@
     background-color: transparent;
     border: none;
     &:hover .grill__icon-like{
-      stroke: #ffffff;
+      opacity:  0.7;
     }
     &:focus {
       outline: none;
-    }
-    &--active {
-      stroke: #ffffff;
     }
   }
   &__button-like + p {
     letter-spacing: 0.04em;
     color: #ffffff;
+  }
+  &__icon-like--added {
+    stroke: #ffffff;
   }
 }

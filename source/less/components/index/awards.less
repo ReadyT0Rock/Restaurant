@@ -17,10 +17,43 @@
     background-image: none;
   }
   &__container {
+    position: relative;
+
     display: flex;
     justify-content: space-between;
     width: 1300px;
     margin: 0 auto;
+    &::before {
+      position: absolute;
+      content: '';
+
+      top: 0;
+      right: 0;
+
+      width: 483px;
+      height: 691px;
+
+      background: url('../img/index/awards/dish.jpg') no-repeat;
+      background-size: 483px 691px;
+      @media (min-resolution: 2dppx) {
+        background: url('../img/index/awards/dish@2x.jpg') no-repeat;
+        background-size: 483px 691px;
+      }
+    }
+    &::after {
+      position: absolute;
+      content: 'G';
+
+      top: 480px;
+      left: 722px;
+      z-index: 0;
+
+      font-size: 600px;
+      font-weight: 700;
+      color: #fafafa;
+
+      opacity: 0.8;
+    }
   }
   &__wrapper {
     padding-top: 118px;
@@ -58,7 +91,7 @@
     justify-content: space-between;
     width: 301px;
     & div {
-     width: 190px;
+      width: 190px;
     }
   }
   &__icon {
@@ -71,17 +104,5 @@
     line-height: 30px;
     letter-spacing: 0.04em;
     color: @second-color-text;
-  }
-  &__decorate-word {
-    position: absolute;
-    top: 598px;
-    left: 998px;
-    z-index: 0;
-
-    font-size: 600px;
-    font-weight: 700;
-    color: #fafafa;
-
-    opacity: 0.8;
   }
 }
